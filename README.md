@@ -12,7 +12,7 @@ Website Link (WIP)
 <details>
 <summary> Cheatsheets </summary>
   
-  - WIP
+  - [C](linguaggi/C-Cheatsheet.md)
   
 </details>
 
