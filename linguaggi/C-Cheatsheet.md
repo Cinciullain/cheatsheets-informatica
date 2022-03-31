@@ -10,7 +10,7 @@
     - [Operatori](#operatori)
       - [Aritmecici](#operatori-aritmetici)
       - [Logici e Relazionali](#operatori-logici-e-relazionali)
-      - [Bit](#operatori-sui-bit)
+      - [Bit a Bit](#operatori-bit-a-bit)
 
 ---
 
@@ -36,4 +36,18 @@
 
 **Operatori Logici e Relazionali**
 
-**Operatori sui Bit**
+| Operatori | Esempio   | Significato        |
+| --------- | --------- | ------------------ |
+| <         | a < b     | Minore di          |
+| <=        | a <= b    | Minore o uguale    |
+| >         | a > b     | Maggiore di        |
+| >=        | a >= b    | Maggiore o uguale  |
+| &&        | a && b    | AND logico         |
+| &#124;&#124; | a &#124;&#124; b | OR logico  |
+| !            | a ! b o !a       | NOT logico |
+
+**Operatori Bit a Bit**
+
+| Operatori | Esempio   | Significato        |
+| --------- | --------- | ------------------ |
+|  |  |  |
