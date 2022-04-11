@@ -22,6 +22,8 @@
 
 ### Tipi Primitivi
 
+---
+
 ### Operatori
 
 **Operatori Aritmetici**
@@ -59,7 +61,8 @@
 | &#124; | a &#124; b | OR | ~
 | ~ | ~ (a) | C1 |
 
-
-
 ---
+
+### WIP
+
 ### Q & A
