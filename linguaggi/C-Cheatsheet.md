@@ -6,6 +6,7 @@
 - [C Cheatsheet](#c-cheatsheet)
   - [Indice dei Contenuti](#indice-dei-contenuti)
     - [Overview del Linguaggio](#overview) 
+    - [Setup Ambiente](#setup-ambiente)
     - [Tipi Primitivi](#tipi-primitivi)
     - [Operatori](#operatori)
       - [Aritmecici](#operatori-aritmetici)
@@ -13,8 +14,6 @@
       - [Bit a Bit](#operatori-bit-a-bit)
 
 ---
-
-<!-- ## Basi -->
 
 ### Overview
 
