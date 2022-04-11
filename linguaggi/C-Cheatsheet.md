@@ -3,19 +3,20 @@
 
 ## Indice dei Contenuti
 
-- [C Cheatsheet](#c-cheatsheet)
-  - [Indice dei Contenuti](#indice-dei-contenuti)
-    - [Overview del Linguaggio](#overview) 
-    - [Setup Ambiente](#setup-ambiente)
-    - [Tipi Primitivi](#tipi-primitivi)
-    - [Operatori](#operatori)
-      - [Aritmecici]
-      - [Logici e Relazionali]
-      - [Bit a Bit]
+- [Overview del Linguaggio](#overview) 
+- [Setup Ambiente](#setup-ambiente)
+- [Tipi Primitivi](#tipi-primitivi)
+- [Operatori](#operatori)
+  - [Aritmecici]()
+  - [Logici e Relazionali]()
+  - [Bit a Bit]()
+- [Q & A](#q-&-a)
 
 ---
 
 ### Overview
+
+
 
 ### Setup Ambiente
 
@@ -57,3 +58,8 @@
 | ^ | a ^ b | XOR |
 | &#124; | a &#124; b | OR | ~
 | ~ | ~ (a) | C1 |
+
+
+
+---
+### Q & A
