@@ -10,7 +10,7 @@
   - [Aritmecici]()
   - [Logici e Relazionali]()
   - [Bit a Bit]()
-- [Q & A](#q-&-a)
+- [Q & A](#q--a)
 
 ---
 
