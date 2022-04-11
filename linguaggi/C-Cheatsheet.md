@@ -9,13 +9,15 @@
     - [Setup Ambiente](#setup-ambiente)
     - [Tipi Primitivi](#tipi-primitivi)
     - [Operatori](#operatori)
-      - [Aritmecici](#operatori-aritmetici)
-      - [Logici e Relazionali](#operatori-logici-e-relazionali)
-      - [Bit a Bit](#operatori-bit-a-bit)
+      - [Aritmecici]
+      - [Logici e Relazionali]
+      - [Bit a Bit]
 
 ---
 
 ### Overview
+
+### Setup Ambiente
 
 ### Tipi Primitivi
 
