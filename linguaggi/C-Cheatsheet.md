@@ -49,4 +49,9 @@
 
 | Operatori | Esempio   | Significato        |
 | --------- | --------- | ------------------ |
-|  |  |  |
+| << |  | Shift a sinistra |
+| >> |  | Shift a destra   |
+| & | a & b | AND |
+| ^ | a ^ b | XOR |
+| &#124; | a &#124; b | OR | ~
+| ~ | ~ (a) | C1 |
