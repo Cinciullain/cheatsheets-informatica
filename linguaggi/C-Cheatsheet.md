@@ -10,7 +10,7 @@
   - [Aritmecici]()
   - [Logici e Relazionali]()
   - [Bit a Bit]()
-- [Strutture di Controllo di Flusso](strutture-di-controllo-di-flusso)
+- [Strutture di Controllo di Flusso](#strutture-di-controllo-di-flusso)
 - [Q & A](#q--a)
 
 ---
