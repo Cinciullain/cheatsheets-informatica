@@ -10,6 +10,7 @@
   - [Aritmecici]()
   - [Logici e Relazionali]()
   - [Bit a Bit]()
+- [Strutture di Controllo di Flusso](strutture-di-controllo-di-flusso)
 - [Q & A](#q--a)
 
 ---
@@ -39,7 +40,7 @@ int massimo = 2147483647;
 int minimo = -2147483648;
 ```
 
-**shor** - Come un int, ma più piccolo. Dimensione: 2 bytes
+**short** - Come un int, ma più piccolo. Dimensione: 2 bytes
 
 ```c
 //Esempio di definizione
@@ -110,6 +111,10 @@ void main(){
 | ~         | ~ (a)       | C1                 |
 
 ---
+
+### Strutture di Controllo di Flusso
+
+sd
 
 ### WIP
 
