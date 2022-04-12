@@ -122,7 +122,21 @@ In informatica le strutture di controllo sono dei costrutti per la gestione del 
 
 #### if-else
 
-WIP
+```c
+if(condzione)
+{
+    ...
+}
+else if(altra_condizione)
+{
+    ...   
+}
+//Viene eseguito solo se i controlli precedenti non vengono attivati
+else
+{
+    ...    
+}
+```
 
 #### switch
 
@@ -130,16 +144,18 @@ WIP
 switch(espressione)
 {
     case decisione1:
-        //codice
+        ...
         //Il break termina il caso e di conseguenza lo switch
         break; 
         
     case decisione2:
+        ...
         break;
     .
     .
     .
     case decisioneN:
+        ...
         break;
         
     /*
@@ -153,15 +169,31 @@ switch(espressione)
 
 #### while
 
-WIP
+```c
+while(condizione)
+{
+    ...
+}
+```
 
 #### do-while
 
-WIP
+```c
+do
+{
+    ...
+}
+while(codizione);
+```
 
 #### for
 
-WIP
+```c
+for(int i = 0; i < contatore; i++)
+{
+    ...
+}
+```
 
 ---
 
