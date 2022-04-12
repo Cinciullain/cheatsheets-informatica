@@ -79,7 +79,7 @@ void main(){
 
 ### Operatori
 
-**Operatori Aritmetici**
+#### Operatori Aritmetici
 
 | Operatori | Esempio     | Significato        |
 | --------- | :---------: | ------------------ |
@@ -91,7 +91,7 @@ void main(){
 | /         | a / b       | Divisione          |
 | %         | a % b       | Modulo             |
 
-**Operatori Logici e Relazionali**
+#### Operatori Logici e Relazionali
 
 | Operatori | Esempio     | Significato        |
 | --------- | :---------: | ------------------ |
@@ -103,7 +103,7 @@ void main(){
 | &#124;&#124; | a &#124;&#124; b | OR logico  |
 | !            | a ! b o !a       | NOT logico |
 
-**Operatori Bit a Bit**
+#### Operatori Bit a Bit
 
 | Operatori | Esempio     | Significato        |
 | --------- | :---------: | ------------------ |
@@ -118,23 +118,23 @@ void main(){
 
 ### Strutture di Controllo di Flusso
 
-**if-else**
+#### if-else
 
 WIP
 
-**switch**
+#### switch
 
 WIP
 
-**while**
+#### while
 
 WIP
 
-**do-while**
+#### do-while
 
 WIP
 
-**for**
+#### for
 
 WIP
 
