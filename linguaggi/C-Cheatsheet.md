@@ -122,6 +122,8 @@ In informatica le strutture di controllo sono dei costrutti per la gestione del 
 
 #### if-else
 
+
+
 ```c
 if(condzione)
 {
@@ -140,12 +142,15 @@ else
 
 #### switch
 
+Lo switch-case viene utilizzata come alernativa di utilizzo agli if-else, così da avere un codice
+più ordinato e più facilmente manutentibile, oltre ad offrire in più il *default* case.
+
 ```c
 switch(espressione)
 {
     case decisione1:
         ...
-        //Il break termina il caso e di conseguenza lo switch
+        //Il break termina il pezzo di codice e di conseguenza lo switch
         break; 
         
     case decisione2:
