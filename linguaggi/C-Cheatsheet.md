@@ -35,18 +35,17 @@ char variabile = 'a';
 
 ```c
 //Esempio di definizione
-int mesi = 18;
+int massimo = 2147483647;
+int minimo = -2147483648;
 ```
 
-**long** - Come un int, ma più grande. Dimensione: 8 bytes
+**shor** - Come un int, ma più piccolo. Dimensione: 2 bytes
 
 ```c
 //Esempio di definizione
-int massimo = 2147483647;
-int minimo = 2147483647
+short massimo = 32767;
+short minimo = -32767;
 ```
-
-**shor**
 
 **float** - Memorizza un valore in virgola mobile con una precisione fino a 6 cifre. Dimensione: 4 bytes
 
