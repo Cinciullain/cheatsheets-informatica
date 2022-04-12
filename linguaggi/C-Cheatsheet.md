@@ -4,7 +4,7 @@
 ## Indice dei Contenuti
 
 - [Overview del Linguaggio](#overview) 
-- [Setup Ambiente](#setup-ambiente)
+- [Setup Ambiente di Sviluppo](#setup-ambiente-di-sviluppo)
 - [Tipi Primitivi](#tipi-primitivi)
 - [Operatori](#operatori)
   - [Aritmecici]()
@@ -21,7 +21,7 @@ WIP
 
 ---
 
-### Setup Ambiente
+### Setup Ambiente di Sviluppo
 
 WIP
 
@@ -122,7 +122,8 @@ In informatica le strutture di controllo sono dei costrutti per la gestione del 
 
 #### if-else
 
-
+È un costutto base fondamentale, fondato sulle parole chiave *if* ed *else*, utilizzabili
+singolarmente, annidati, o consecutivamente.
 
 ```c
 if(condzione)
