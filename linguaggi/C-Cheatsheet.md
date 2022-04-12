@@ -17,9 +17,13 @@
 
 ### Overview
 
+WIP
 
+---
 
 ### Setup Ambiente
+
+WIP
 
 ---
 
@@ -114,7 +118,9 @@ void main(){
 
 ### Strutture di Controllo di Flusso
 
-sd
+WIP
+
+---
 
 ### WIP
 
