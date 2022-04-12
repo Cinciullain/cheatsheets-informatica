@@ -118,13 +118,38 @@ void main(){
 
 ### Strutture di Controllo di Flusso
 
+In informatica le strutture di controllo sono dei costrutti per la gestione del flusso di esecuzione. In C, come in altri linguaggi, abbiamo le 5 principali, spiegate di seguito.
+
 #### if-else
 
 WIP
 
 #### switch
 
-WIP
+```c
+switch(espressione)
+{
+    case decisione1:
+        //codice
+        //Il break termina il caso e di conseguenza lo switch
+        break; 
+        
+    case decisione2:
+        break;
+    .
+    .
+    .
+    case decisioneN:
+        break;
+        
+    /*
+    Il default è l'ultimo caso di uno switch, il blocco di codice al suo interno
+    viene eseguito se nessuno dei casi precedenti è stato attivato.
+    */
+    default:
+        //codice
+}
+```
 
 #### while
 
