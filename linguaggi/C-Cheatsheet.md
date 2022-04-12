@@ -118,6 +118,24 @@ void main(){
 
 ### Strutture di Controllo di Flusso
 
+**if-else**
+
+WIP
+
+**switch**
+
+WIP
+
+**while**
+
+WIP
+
+**do-while**
+
+WIP
+
+**for**
+
 WIP
 
 ---
