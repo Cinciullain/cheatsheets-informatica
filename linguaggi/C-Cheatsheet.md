@@ -22,8 +22,12 @@ WIP
 ---
 
 ### Setup Ambiente di Sviluppo
+Per poter eseguire codice in C è necessario un compilatore, così da poter eseguire e testare il codice.
 
-WIP
+-
+
+
+**NB:** Ogni OS compila in modo differente, quindi un codice compilato ed eseguito su Linux, può avere risultati differenti su MacOS e Windows.
 
 ---
 
@@ -66,7 +70,7 @@ float lunghezza = 5.8;
 double variabile = 12.1531452;
 ```
 
-**void** - Represents the absence of type.
+**void** - Rappresente il tipo vuoto.
 
 ```c
 //Esempio di definizione
@@ -117,11 +121,9 @@ void main(){
 ---
 
 ### Strutture di Controllo di Flusso
-
 In informatica le strutture di controllo sono dei costrutti per la gestione del flusso di esecuzione. In C, come in altri linguaggi, abbiamo le 5 principali, spiegate di seguito.
 
 #### if-else
-
 È un costutto base fondamentale, fondato sulle parole chiave *if* ed *else*, utilizzabili
 singolarmente, annidati, o consecutivamente.
 
@@ -142,7 +144,6 @@ else
 ```
 
 #### switch
-
 Lo switch-case viene utilizzata come alernativa di utilizzo agli if-else, così da avere un codice
 più ordinato e più facilmente manutentibile, oltre ad offrire in più il *default* case.
 
@@ -174,6 +175,7 @@ switch(espressione)
 ```
 
 #### while
+Il while è una struttura di tipo iterativa, che svolge il codice finché la condizione viene rispettata.
 
 ```c
 while(condizione)
@@ -183,7 +185,8 @@ while(condizione)
 ```
 
 #### do-while
-
+Il do-while a differenza del while, svolge il codice al suo interno almeno una volta,
+poi verrà ripetuto solo finché la condizione sarà rispettata.
 ```c
 do
 {
@@ -193,6 +196,8 @@ while(codizione);
 ```
 
 #### for
+Il ciclo for è indicato quando il modo più naturale per esprimere la condizione di permanenza 
+in un ciclo consiste nello specificare quante volte debbano essere ripetuti l'istruzione o il blocco controllati dal ciclo.
 
 ```c
 for(int i = 0; i < contatore; i++)
