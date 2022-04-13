@@ -24,8 +24,11 @@ WIP
 ### Setup Ambiente di Sviluppo
 Per poter eseguire codice in C è necessario un compilatore, così da poter eseguire e testare il codice.
 
--
-
+- **Linux e MacOS:** basta aprire il terminale nella cartella dove è presente il file .c ed eseguire il seguente comando
+            ```
+            $ gcc -o output.o file.c
+            ```
+- **Windows:** ha la necessità di installare alcuni packages, consiglio questa [guida](https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html).
 
 **NB:** Ogni OS compila in modo differente, quindi un codice compilato ed eseguito su Linux, può avere risultati differenti su MacOS e Windows.
 
