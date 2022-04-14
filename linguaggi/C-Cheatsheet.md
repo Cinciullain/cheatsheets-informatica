@@ -13,6 +13,8 @@
 - [Strutture di Controllo di Flusso](#strutture-di-controllo-di-flusso)
 - [Funzioni](#funzioni)
   - [Ricorsione](#ricorsione)
+- [Array](#array)
+- [Puntatori](#puntatori)
 - [](#)
 - [Q & A](#q--a)
 
@@ -254,6 +256,34 @@ int fibonacci(int n)
 }
 ```
   
+---
+
+### Array
+Sono una collezione di dati di tipo statico dello stesso tipo, come interi, double o char. La loro dichiarazione è come segue:
+
+```c
+tipo_variabile nome_array[grandezza];
+```
+
+Un esempio pratico di utilizzo può essere la rappresentazione di alcune lettere.
+
+```c
+//Dichiaro direttamente l'array con il contenuto, così lo crea con una grandezza di 3
+char array = {a, b, c};
+/*
+Il printf è una funzione che stampa a schermo quello che gli indichiamo, in questo caso il %c
+indica che verrà preso un carattere da una variabile, indicata dopo la virgola.
+In questo caso la variabile che mostrerà sarà la a, perchè il primo elemento di un array
+è sempre in posizione 0, mentre l'ultimo è sempre in posizione n - 1.
+*/
+printf("%c", array[0]);
+```
+
+---
+
+### Puntatori
+Sono un particolare tipo di variabile
+
 ---
 
 ### Q & A
