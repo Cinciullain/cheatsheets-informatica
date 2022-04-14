@@ -1,5 +1,5 @@
 # C Cheatsheet
-**Download PDF WIP**
+**Download PDF: [WIP]()**
 
 ## Indice dei Contenuti
 
@@ -11,6 +11,9 @@
   - [Logici e Relazionali]()
   - [Bit a Bit]()
 - [Strutture di Controllo di Flusso](#strutture-di-controllo-di-flusso)
+- [Funzioni](#funzioni)
+  - [Ricorsione](#ricorsione)
+- [](#)
 - [Q & A](#q--a)
 
 ---
@@ -211,6 +214,46 @@ for(int i = 0; i < contatore; i++)
 
 ---
 
-### WIP
+### Funzioni
+Le funzioni sono utilizzate per dividere il codice ed evitare la ripetitività, rendendolo più facilmente mantenibile e modificabile, oltre a renderlo più ordinato.
+
+```c
+tipo_restituito nome_funzione(tipo_parametro nome_parametro)
+{
+    ...
+    return risultato;
+}
+```
+
+Un esempio può essere una funzione di addizione:
+
+```c
+int addizzione(int a, int b)
+{
+    return a + b;
+}
+```
+#### Ricorsione
+La ricorsione è una tecnica di programmazione molto potente, che sfrutta l'idea di suddividere un problema da risolvere in sottoproblemi simili a quello originale, ma più semplici.
+
+```c
+int fibonacci(int n)
+{
+    if(n == 0)
+    {
+        return 0;
+    }
+    else if(n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return (fibonacci(n - 1) + fibonacci(n - 2));
+    }
+}
+```
+  
+---
 
 ### Q & A
