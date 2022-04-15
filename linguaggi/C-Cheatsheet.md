@@ -364,3 +364,4 @@ WIP
 ### Extra
 - Libri open source di C
   - [The C book](https://publications.gbdirect.co.uk//c_book/)
+  - [C Elements of Style](http://www.oualline.com/books.free/style/index.html)
