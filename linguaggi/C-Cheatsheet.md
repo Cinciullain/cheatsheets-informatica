@@ -67,7 +67,7 @@ int minimo = -2147483648;
 ```c
 //Esempio di definizione
 short massimo = 32767;
-short minimo = -32767;
+short minimo = -32768;
 ```
 
 **float** - Memorizza un valore in virgola mobile con una precisione fino a 6 cifre. Dimensione: 4 bytes
@@ -309,12 +309,45 @@ puntatore = &array[3];
 ---
 
 ### Stringhe
-WIP
+Le stringhe non esistono come tipo in C, quindi vengono rappresentate con array di char, e l'ultimo elemento deve sempre essere quello terminale, ovvero `\0`.
+Di seguito alcune delle funzioni più importanti per le operazioni sulle stringhe:
+  - Lunghezza di una stringa 
+  ```c 
+  strlen(s); 
+  ```
+  
+  - Comparare due stringhe
+  ```c
+  strcmp(s1, s2);
+  ```
+  
+  - Copiare una stringa in un'altra
+  ```c
+  strcpy(s1, s2);
+  ```
+  
+  - Concatena una stringa ad un'altra
+  ```c
+  strcat(s1, s2);
+  ```
+  
+  - sd
+  - sd
 
 ---
 
 ### Strutture
-WIP
+Con le strutture si possono creare tipi di dati, che magari contengono più tipi al loro interno.
+
+```c
+struct studente
+{
+    char nome[30];
+    char cognome[20];
+    int id;
+    int eta;
+}; 
+```
 
 ---
 
