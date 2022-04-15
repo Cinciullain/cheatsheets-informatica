@@ -330,9 +330,6 @@ Di seguito alcune delle funzioni più importanti per le operazioni sulle stringh
   ```c
   strcat(s1, s2);
   ```
-  
-  - sd
-  - sd
 
 ---
 
