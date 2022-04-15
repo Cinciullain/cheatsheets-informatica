@@ -360,3 +360,7 @@ WIP
 
 ### Q & A
 WIP
+
+### Extra
+- Libri open source di C
+  - [The C book](https://publications.gbdirect.co.uk//c_book/)
