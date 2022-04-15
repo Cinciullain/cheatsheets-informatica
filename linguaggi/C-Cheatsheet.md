@@ -15,6 +15,10 @@
   - [Ricorsione](#ricorsione)
 - [Array](#array)
 - [Puntatori](#puntatori)
+- [Stringhe](#stringhe)
+- [Strutture](#strutture)
+- [Gestione dei File](#gestione-dei-file)
+- [Allocazione Dinamica della Memoria](#allocazione-dinamica-della-memoria)
 - [](#)
 - [Q & A](#q--a)
 
@@ -36,6 +40,8 @@ Per poter eseguire codice in C è necessario un compilatore, così da poter eseg
 - **Windows:** ha la necessità di installare alcuni packages, consiglio questa [guida](https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html).
 
 **NB:** Ogni OS compila in modo differente, quindi un codice compilato ed eseguito su Linux, può avere risultati differenti su MacOS e Windows.
+
+Per approfondire il processo di compilazione ed esecuzione dei programmi in C, consiglio questo [libro](https://www.linuxlinks.com/wp-content/uploads/2019/07/An_Introduction_to_GCC-Brian_Gough.pdf).
 
 ---
 
@@ -249,10 +255,8 @@ int fibonacci(int n)
     {
         return 1;
     }
-    else
-    {
-        return (fibonacci(n - 1) + fibonacci(n - 2));
-    }
+    
+    return (fibonacci(n - 1) + fibonacci(n - 2));
 }
 ```
   
@@ -282,8 +286,47 @@ printf("%c", array[0]);
 ---
 
 ### Puntatori
-Sono un particolare tipo di variabile
+Sono un particolare tipo di variabile.
+A loro sono associati due simboli fondamentali:
+  - `*` Serve per dichiarare o avere il valore di un puntatore 
+  - `&` Serve per avere l'indirizzo ed accedere al puntatore stesso
+
+Sono versatili e sono fondamentali in C, e per esempio possiamo usarli assieme agli array.
+```c
+/*
+Dichiaro un array e un puntatore. Poi il puntatore avrà come valore l'indirizzo della posizione 3 dell'array
+*/
+int array[3];
+...
+int *puntatore;
+puntatore = &array[3];
+```
+
+<p align="center">
+  <img src="https://publications.gbdirect.co.uk//c_book/figures/5.4.png" />
+</p>
+
+---
+
+### Stringhe
+WIP
+
+---
+
+### Strutture
+WIP
+
+---
+
+### Gestione dei File
+WIP
+
+---
+
+### Allocazione Dinamica della Memoria
+WIP
 
 ---
 
 ### Q & A
+WIP
