@@ -349,7 +349,39 @@ struct studente
 ---
 
 ### Gestione dei File
-WIP
+È fondamentale saper gestire ed utilizzare i file, di seguito le basi per poterli sfruttare.
+
+- Creare un pointer per accedere al file
+```c
+FILE *fPtr;
+```
+
+- Aprire il file
+```c
+fPtr = fopen("path_file", condizione);
+/*
+La condizione può essere di 6 tipi:
+    - r: Aprire il file in lettura; Deve esistere
+    - r+: Apre il file in letture/scrittura; Deve esistere.
+    - w: Crea un nuovo file in scrittura; Se esiste viene sovrascritto.
+    - w+: Crea un nuovo file in scrittura/lettura; Se esiste viene sovrascritto.
+    - a: Aggiunge (append) alla fine del file; Se non esiste viene creato.
+    - a+: Aggiunge (append) e legge alla fine del file; Se non esiste viene creato.
+*/ 
+```
+
+- Leggere il contenuto di un file
+```c
+fscanf(FILE *fPtr, formato, argomenti);
+
+//Un esempio di utilizzo può essere
+fscanf(fPtr, "%s %s %d", &nome, &cognome, &età);
+```
+
+- Scrivere su di un file
+```c
+fprintf(FILE *fPtr, formato, argomenti);
+```
 
 ---
 
