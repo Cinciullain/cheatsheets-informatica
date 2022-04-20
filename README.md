@@ -12,7 +12,8 @@ Website Link (WIP)
 <details>
 <summary> Cheatsheets </summary>
   
-  - [C](linguaggi/C-Cheatsheet.md)
+  - [C - IT](linguaggi/C/C-Cheatsheet-IT.md)
+  - [C - ENG](linguaggi/C/C-Cheatsheet-ENG.md)
   
 </details>
 
