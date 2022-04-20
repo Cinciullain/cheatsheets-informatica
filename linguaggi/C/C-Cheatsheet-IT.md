@@ -434,7 +434,7 @@ char *stringa;
 stringa = (char*)malloc(sizeof(char));
 
 /*
-(char*): Questa prima parte è un cast esplicito, serve a far capire al compilatore che il comando che viene dopo deve essere traspormato in una puntatore di char
+(char*): Questa prima parte è un cast esplicito, serve a far capire al compilatore che il comando successivo deve essere traspormato in una puntatore di char
 malloc(): È il comando effettivo che alloca la memoria, l'argomento che sta nella parentesi è la grandezza in bytes che serve per quel tipo di variabile
 sizeof(char): Per evitare di commettere errori indicando i byte necessari, questa funzione fa il lavoro per noi, indicando la grandezza esatta del tipo che ci serve
 */
