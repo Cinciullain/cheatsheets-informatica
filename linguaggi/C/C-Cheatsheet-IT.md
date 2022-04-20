@@ -426,7 +426,33 @@ int main()
 ---
 
 ### Allocazione Dinamica della Memoria
-WIP
+Nel caso non si sappia in anticipo la grandezza di un array, o di una struttura di dati, non si può allocare staticamente la memoria con `char nome[20]` ma bisogna utilizzare un costrutto più complesso, l'allocazione dinamica, rischioso però quando si hanno risorse limitate come su piccole board.
+
+Se non sappiamo per esempio quanti caratteri arriveranno in ingresso, bisogna procedere come segue, per ogni char ricevuto:
+```c
+char *stringa;
+stringa = (char*)malloc(sizeof(char));
+
+/*
+(char*): Questa prima parte è un cast esplicito, serve a far capire al compilatore che il comando che viene dopo deve essere traspormato in una puntatore di char
+malloc(): È il comando effettivo che alloca la memoria, l'argomento che sta nella parentesi è la grandezza in bytes che serve per quel tipo di variabile
+sizeof(char): Per evitare di commettere errori indicando i byte necessari, questa funzione fa il lavoro per noi, indicando la grandezza esatta del tipo che ci serve
+*/
+```
+
+Quando si utilizza questo tipo di allocazione in memoria, è imporante anche liberarla quando non più utilizzata, e lo si può fare con:
+```c
+free(&puntatore);
+```
+
+Altri due modi per sfruttare questo funzionamento sono anche:
+- ```c
+  *var = (tipo*)calloc(n, grandezza);
+  ```
+
+- ```c
+  *var = realloc(*var2, n);
+  ```
 
 ---
 
