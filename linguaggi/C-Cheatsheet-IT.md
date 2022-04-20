@@ -33,10 +33,24 @@ WIP
 ### Setup Ambiente di Sviluppo
 Per poter eseguire codice in C è necessario un compilatore, così da poter eseguire e testare il codice.
 
-- **Linux e MacOS:** basta aprire il terminale nella cartella dove è presente il file .c ed eseguire il seguente comando
+- **Linux e MacOS:** serve eseguire alcuni comandi da terminale:
+  - Installiamo i package fondamentali
+    ```
+    $ sudo apt-get install build essential
+    ```
+    
+  - Installiamo il gcc, che compila ed esegue il codice
+    ```
+    % sudo apt install gcc
+    ```
+
+Aprendo il terminale nella cartella dove è presente il file .c ed eseguendo il seguente comando, si compila
             ```
             $ gcc -o output.o file.c
-            ```
+            ```.
+            
+Una volta compilato, proviamo il risultato con: ``` $ ./output.o```
+
 - **Windows:** ha la necessità di installare alcuni packages, consiglio questa [guida](https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html).
 
 **NB:** Ogni OS compila in modo differente, quindi un codice compilato ed eseguito su Linux, può avere risultati differenti su MacOS e Windows.
@@ -381,6 +395,32 @@ fscanf(fPtr, "%s %s %d", &nome, &cognome, &età);
 - Scrivere su di un file
 ```c
 fprintf(FILE *fPtr, formato, argomenti);
+```
+
+Un esempio di utilizzo dei file può essere il seguente:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{
+    FILE *fPtr;
+ 
+    if((fPtr = fopen("file.txt", "r")) == NULL)
+    {
+        printf("File non trovato");
+        exit(1);
+    }
+ 
+ 
+    char string[100];
+    while (fscanf(fPtr, "%s", string) != EOF)
+    {
+        printf("%s \n", string);
+    }
+ 
+    return 0;
+}
 ```
 
 ---
