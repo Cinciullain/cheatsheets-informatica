@@ -34,6 +34,7 @@ Website Link (WIP)
   - Embedded C
   - VSCode
   - Python
+  - Java
 
 ---
 
