@@ -7,7 +7,7 @@ Website Link (WIP)
 
 ### 🗄️ *Indice*
 
-#### 📚Linguaggi
+#### 🖥️Linguaggi
 
 <details>
 <summary> Cheatsheets </summary>
@@ -17,7 +17,7 @@ Website Link (WIP)
   
 </details>
 
-#### 🛠 Strumenti
+#### 🧰 Strumenti
 
 <details>
 <summary> Cheatsheets </summary>
