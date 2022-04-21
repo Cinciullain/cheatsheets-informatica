@@ -35,11 +35,12 @@ Website Link (WIP)
 
 ### *Prossimi Argomenti*
 
-  - C
-  - Embedded C
-  - VSCode
-  - Python
-  - Java
+  - C - ✔️
+  - Java - WIP
+  - Python - WIP
+  - Git - WIP
+  - VSCode - WIP
+  - Embedded C - WIP
 
 ---
 
