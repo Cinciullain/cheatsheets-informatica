@@ -458,35 +458,35 @@ In C è anche importante saper utilizzare i diversi print e scan in modo correto
 
 #### Identificatori di Formato
 
-| Identificatore | Tipo            |
-| -------------- | --------------- |
-| %c             | char            |
-| %d             | int             |
-| %f             | float           |
-| %lf            | double          |
-| %l             | long            |
-| %Lf            | long double     |
-| %lld           | long long       |
-| %o             | ottale          |
-| %p             | pointer         |
-| %s             | string          |
-| %%             | stampa il %     |
+| Identificatore    | Tipo                |
+| ----------------- | ------------------- |
+| %c                | char                |
+| %d                | int                 |
+| %f                | float               |
+| %lf               | double              |
+| %l                | long                |
+| %Lf               | long double         |
+| %lld              | long long           |
+| %o                | ottale              |
+| %p                | pointer             |
+| %s                | string              |
+| %%                | stampa il %         |
 
 
 #### Sequenze di Escape
 
-| Sequenza        | Output               |
-| --------------- | -------------------- |
-| \a              | Produce un beep      |
-| \b              | Backspace            |
-| \f              | Form Feed            |
-| \n              | Nuova riga           |
-| \t              | Tab (4 spazi)        |
-| \v              | Tab verticale        |
-| &#92;&#92;      | Backslash            |
-| &#92;"          | Virgolette           |
-| &#92;'          | Virgoletta           |
-| &#92;?          | Punto di domanda     |
+| Sequenza           | Output                   |
+| ------------------ | ------------------------ |
+| \a                 | Produce un beep          |
+| \b                 | Backspace                |
+| \f                 | Form Feed                |
+| \n                 | Nuova riga               |
+| \t                 | Tab (4 spazi)            |
+| \v                 | Tab verticale            |
+| &#92;&#92;         | Backslash                |
+| &#92;"             | Virgolette               |
+| &#92;'             | Virgoletta               |
+| &#92;?             | Punto di domanda         |
 
 ---
 
