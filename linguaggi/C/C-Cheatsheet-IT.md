@@ -19,8 +19,11 @@
 - [Strutture](#strutture)
 - [Gestione dei File](#gestione-dei-file)
 - [Allocazione Dinamica della Memoria](#allocazione-dinamica-della-memoria)
-- [](#)
+- [Formattazione del Testo](#formattazione-del-testo)
+  - [Identificatori di Formato](#identificatori-di-formato)
+  - [Sequenze di Escape](#sequenze-di-escape)
 - [Q & A](#q--a)
+- [Extra](#extra)
 
 ---
 
@@ -255,6 +258,7 @@ int addizzione(int a, int b)
     return a + b;
 }
 ```
+
 #### Ricorsione
 La ricorsione è una tecnica di programmazione molto potente, che sfrutta l'idea di suddividere un problema da risolvere in sottoproblemi simili a quello originale, ma più semplici.
 
@@ -453,6 +457,43 @@ Altri due modi per sfruttare questo funzionamento sono anche:
 - ```c
   *var = realloc(*var2, n);
   ```
+
+---
+
+### Formattazione del Testo
+In C è anche importante saper utilizzare i diversi print e scan in modo correto, utilizzandoli in modo completo e ordinato, così da tenere ordine nel proprio codice.
+
+#### Identificatori di Formato
+
+| Identificatore | Tipo            |
+| -------------- | --------------- |
+| %c             | char            |
+| %d             | int             |
+| %f             | float           |
+| %lf            | double          |
+| %l             | long            |
+| %Lf            | long double     |
+| %lld           | long long       |
+| %o             | ottale          |
+| %p             | pointer         |
+| %s             | string          |
+| %%             | stampa il %     |
+
+
+#### Sequenze di Escape
+
+| Sequenza        | Output               |
+| --------------- | -------------------- |
+| \a              | Produce un beep      |
+| \b              | Backspace            |
+| \f              | Form Feed            |
+| \n              | Nuova riga           |
+| \t              | Tab (4 spazi)        |
+| \v              | Tab verticale        |
+| &#92;&#92;      | Backslash            |
+| &#92;"          | Virgolette           |
+| &#92;'          | Virgoletta           |
+| &#92;?          | Punto di domanda     |
 
 ---
 
