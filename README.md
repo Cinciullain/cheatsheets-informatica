@@ -27,6 +27,7 @@ Website Link (WIP)
 <summary> Cheatsheets </summary>
 
 - [VSCode](strumenti/VSCode.md)
+- [Git](strumenti/Git.md)
   
 </details>
 
