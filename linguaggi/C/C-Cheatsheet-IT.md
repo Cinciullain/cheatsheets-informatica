@@ -3,7 +3,6 @@
 
 ## Indice dei Contenuti
 
-- [Overview del Linguaggio](#overview) 
 - [Setup Ambiente di Sviluppo](#setup-ambiente-di-sviluppo)
 - [Tipi Primitivi](#tipi-primitivi)
 - [Operatori](#operatori)
@@ -24,12 +23,6 @@
   - [Sequenze di Escape](#sequenze-di-escape)
 - [Q & A](#q--a)
 - [Extra](#extra)
-
----
-
-### Overview
-
-WIP
 
 ---
 
