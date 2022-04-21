@@ -22,7 +22,7 @@ Website Link (WIP)
 <details>
 <summary> Cheatsheets </summary>
 
-- WIP
+- [VSCode](strumenti/VSCode.md)
   
 </details>
 
