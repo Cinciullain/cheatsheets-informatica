@@ -14,6 +14,10 @@ Website Link (WIP)
   
   - [C - IT](linguaggi/C/C-Cheatsheet-IT.md)
   - [C - ENG](linguaggi/C/C-Cheatsheet-ENG.md)
+  - [Java - IT](linguaggi/Java/Java-Cheatsheet-IT.md)
+  - [Java - ENG](linguaggi/Java/Java-Cheatsheet-ENG.md)
+  - [Python - IT](linguaggi/Python/Python-Cheatsheet-IT.md)
+  - [Python - ENG](linguaggi/Python/Python-Cheatsheet-ENG.md)
   
 </details>
 
