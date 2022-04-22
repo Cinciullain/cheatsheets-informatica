@@ -1,5 +1,5 @@
 /*
- * Esercizio: Programma che controlli se la somma fra due short causa un overflow.
+ * Esercizio: Programma che controlli se la somma fra due short causa un overflow
  */
 
 #include <stdio.h>
@@ -39,7 +39,7 @@ short inputOperando()
     {
         scanf("%*[^\n]%*c");
         printf("Operando errato!\n");
-        printf("Inserisci operando: ");
+        printf("Inserisci operando:");
     }
 
     return operando;
@@ -51,7 +51,7 @@ short inputOperando()
  * Siccome uno short può valere massimo +32767 e -32768, se questa soglia viene superata,
  * il segno cambia, indicando overflow.
  */
-short safeSum(short op1, short op2) 
+short safeSum(short op1, short op2)
 {
     short risultato = op1 + op2;
 
