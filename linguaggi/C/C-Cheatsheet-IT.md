@@ -1,6 +1,8 @@
 # C Cheatsheet
 **Download PDF: [WIP]()**
 
+## [Esercizi](linguaggi/C/Esercizi/EserciziC.md)
+
 ## Indice dei Contenuti
 
 - [Setup Ambiente di Sviluppo](#setup-ambiente-di-sviluppo)
