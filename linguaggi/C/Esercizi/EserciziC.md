@@ -40,3 +40,17 @@ Un esempio di esecuzione è:
 ```
 
 **La mia [soluzione](3_CharToInteger.c).**
+
+### Esercizio 4 - Conta i Caratteri, Spazi e Cifre 
+Prendere una stringa in ingresso, inserita da parte dell'utente, e contarne i caratteri, gli spazi e le cifre.
+
+Un esempio di esecuzione è:
+```
+> Input: Oggi è 4 Agosto 2020
+>
+> Cifre: 0: 2     1: 0    2: 2    3: 0    4: 1    5: 0    6: 0    7: 0    8: 0    9: 0
+> Spazi: 4
+> Caratteri: 11
+```
+
+**La mia [soluzione](4_ContaCaratteriSpaziCifre.c).**
