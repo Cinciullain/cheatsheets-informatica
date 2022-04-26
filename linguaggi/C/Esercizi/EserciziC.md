@@ -54,3 +54,20 @@ Un esempio di esecuzione è:
 ```
 
 **La mia [soluzione](4_ContaCaratteriSpaziCifre.c).**
+
+### Esercizio 5 - Manipolare di Stringhe
+Manipolare le stringhe in 3 modi: Compare, Copy, Length. Creare una alternativa per array e una per puntatori per ogni funzione. 
+
+Un esempio di esecuzione è:
+```
+> Input 1: aaaaaaaaaa
+> Input 2: aaaaaaaaab
+> 
+> Compare con array: -1
+> Compare con puntatori: -1
+> Copy con puntatori: aaaaaaaaab
+> Lunghezza con array: 10, 10
+> Lunghezza con puntatori: 10, 10
+```
+
+**La mia [soluzione](5_ManipolaStringhe.c).**
