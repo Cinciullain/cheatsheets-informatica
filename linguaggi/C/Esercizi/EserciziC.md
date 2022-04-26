@@ -29,3 +29,14 @@ Un esempio di esecuzione è:
 ```
 
 **La mia [soluzione](2_OverflowSomma.c).**
+
+### Esercizio 3 - Char in Intero
+Convertire dei caratteri in ingresso in Interi.
+
+Un esempio di esecuzione è:
+```
+> Input: abc
+> Output: 5451
+```
+
+**La mia [soluzione](3_CharToInteger.c).**
