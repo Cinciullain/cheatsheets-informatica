@@ -1,7 +1,7 @@
 # C Cheatsheet
 **Download PDF: [WIP]()**
 
-## [Esercizi](linguaggi/C/Esercizi/EserciziC.md)
+## [Esercizi](Esercizi/EserciziC.md)
 
 ## Indice dei Contenuti
 
