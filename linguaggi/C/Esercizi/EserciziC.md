@@ -84,3 +84,14 @@ Un esempio di esecuzione è:
 ```
 
 **La mia [soluzione](6_TrovaRigaMaggiore.c).**
+
+### Esercizio 7 - Piano Diviso da Rette
+Far inserire da utente il numero di n rette. Poi calcolare in quante parti il piano viene diviso da tali. Per facilitare la comprensione, una utile [documentazione](https://link.springer.com/content/pdf/bbm%3A978-3-642-36243-9%2F1.pdf).
+
+Un esempio di esecuzione è:
+```
+> Input: 9
+> Output: 46
+```
+
+**La mia [soluzione](7_PianoDiviso.c).**
