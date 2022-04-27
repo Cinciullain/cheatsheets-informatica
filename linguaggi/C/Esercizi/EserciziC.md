@@ -71,3 +71,16 @@ Un esempio di esecuzione è:
 ```
 
 **La mia [soluzione](5_ManipolaStringhe.c).**
+
+### Esercizio 6 - Trova Riga Maggiore
+Far inserire all'utente delle righe di testo finchè non vuole terminare. Il programma deve mostrare alla fine la riga più lunga fra quelle inserite 
+
+Un esempio di esecuzione è:
+```
+> Input 1: aooo
+> Input 2: aoooooo
+> 
+> Output: aoooooo
+```
+
+**La mia [soluzione](6_TrovaRigaMaggiore.c).**
