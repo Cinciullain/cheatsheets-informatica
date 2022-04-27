@@ -86,7 +86,8 @@ Un esempio di esecuzione è:
 **La mia [soluzione](6_TrovaRigaMaggiore.c).**
 
 ### Esercizio 7 - Piano Diviso da Rette
-Far inserire da utente il numero di n rette. Poi calcolare in quante parti il piano viene diviso da tali. Per facilitare la comprensione, una utile [documentazione](https://link.springer.com/content/pdf/bbm%3A978-3-642-36243-9%2F1.pdf).
+Far inserire da utente il numero di n rette. Poi calcolare in quante parti il piano viene diviso da tali. 
+Per facilitare la comprensione, due utili documentazionei in [inglese](https://link.springer.com/content/pdf/bbm%3A978-3-642-36243-9%2F1.pdf) e [italiano](https://www.matematicamente.it/forum/divisioni-del-piano-t27628.html).
 
 Un esempio di esecuzione è:
 ```
