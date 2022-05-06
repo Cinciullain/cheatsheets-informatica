@@ -29,8 +29,32 @@
 ---
 
 ### Environment Setup
-WIP
+To execute C code, you have to compile it. 
 
+- **Linux e MacOS:** you need to execute a few commands:
+  - Install the essential packages
+    ```
+    $ sudo apt-get install build essential
+    ```
+    
+  - Install gcc, the tool to compile and execute the code
+    ```
+    % sudo apt install gcc
+    ```
+    
+Open the terminal in the folder where your .c is located,  and compile it with the following command
+            ```
+            $ gcc -o output.o file.c
+            ```.
+            
+Once compiled, execute the code with: ``` $ ./output.o```
+
+- **Windows:** has the necessity to install different packages, I suggest this [guide](https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html).
+
+**NB:** Every OS compile in a different way, so a program compiled and executed on Linux can give different results on MacOS and Windows.
+
+To have more details about the compilation and execution process in C, I suggest this [book](https://www.linuxlinks.com/wp-content/uploads/2019/07/An_Introduction_to_GCC-Brian_Gough.pdf).
+            
 ---
 
 ### Primitive Data Types
