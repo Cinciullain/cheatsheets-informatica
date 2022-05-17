@@ -58,7 +58,51 @@ To have more details about the compilation and execution process in C, I suggest
 ---
 
 ### Primitive Data Types
-WIP
+**char** - Memorize a single character. Dimension: 1 byte
+
+```c
+//Definition example
+char variable = 'a';
+```
+
+**int** - Memorize an integer value. Dimension: 4 bytes
+
+```c
+//Definition example
+int max = 2147483647;
+int min = -2147483648;
+```
+
+**short** - As an int, but smaller. Dimension: 2 bytes
+
+```c
+//Definition example
+short max = 32767;
+short min = -32768;
+```
+
+**float** - Memorize a floating point value with 6 digits precision. Dimension: 4 bytes
+
+```c
+//Definition example
+float length = 5.8;
+```
+
+**double** - As a float, but bigger, with 14 digits precision. Dimension: 8 bytes.
+
+```c
+//Definition example
+double var = 12.1531452;
+```
+
+**void** - Represents the empty type.
+
+```c
+//Definition example
+void main(){
+    //Nothing to return.
+}
+```
 
 ---
 
@@ -66,7 +110,15 @@ WIP
 
 #### Arithmetics
 
-d
+| Operators | Example     | Meaning           |
+| --------- | :---------: | ----------------- |
+| +         | a + b       | Addition          |
+| ++        | a++ o ++a   | Increment by 1    |
+| -         | a - b       | Subtraction       |
+| --        | a-- o --a   | Decrement by 1    |
+| *         | a * b       | Multiplication    |
+| /         | a / b       | Division          |
+| %         | a % b       | Module            |
 
 #### Logical and Relational
 
