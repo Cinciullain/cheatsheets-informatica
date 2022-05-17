@@ -131,7 +131,7 @@ void main(){
 | >=        | a >= b      | Maggiore o uguale  |
 | &&        | a && b      | AND logico         |
 | &#124;&#124; | a &#124;&#124; b | OR logico  |
-| !            | a ! b o !a       | NOT logico |
+| !            | !a       | NOT logico |
 
 #### Operatori Bit a Bit
 
