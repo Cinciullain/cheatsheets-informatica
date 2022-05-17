@@ -113,9 +113,9 @@ void main(){
 | Operators | Example     | Meaning           |
 | --------- | :---------: | ----------------- |
 | +         | a + b       | Addition          |
-| ++        | a++ o ++a   | Increment by 1    |
+| ++        | a++ or ++a   | Increment by 1    |
 | -         | a - b       | Subtraction       |
-| --        | a-- o --a   | Decrement by 1    |
+| --        | a-- or --a   | Decrement by 1    |
 | *         | a * b       | Multiplication    |
 | /         | a / b       | Division          |
 | %         | a % b       | Module            |
