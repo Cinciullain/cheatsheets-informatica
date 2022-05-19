@@ -233,6 +233,14 @@ for(int i = 0; i < counter; i++)
 ### Functions
 wip
 
+```c
+return_type function_name(parameter_type parameter_name)
+{
+    ...
+    return result
+}
+```
+
 #### Recursion
 wip
 
