@@ -122,31 +122,111 @@ void main(){
 
 #### Logical and Relational
 
-d
+| Operators | Example     | Meaning           |
+| --------- | :---------: | ----------------- |
+| <         | a < b       | Less than         |
+| <=        | a <= b      | Less or equal     |
+| >         | a > b       | Greater than      |
+| >=        | a >= b      | Greater or equal  |
+| &&        | a && b      | Logic AND         |
+| &#124;&#124; | a &#124;&#124; b | Logic OR  |
+| !            | !a       | Logic NOT |
 
 #### Bitwise
 
-d
+| Operators | Example     | Meaning        |
+| --------- | :---------: | ------------------ |
+| <<        | a << 1      | Shift a sinistra   |
+| >>        | a >> 1      | Shift a destra     |
+| &         | a & b       | AND                |
+| ^         | a ^ b       | XOR                |
+| &#124;    | a &#124; b  | OR                 | 
+| ~         | ~ (a)       | C1                 |
 
 ---
 
 ### Flow Control Structures
-wip
+These are a fundamental part in programming, they manage the flow of the execution of a program. In C, as other languages, we have 5 of them, explained as follows.
 
 #### if-else
-wip
+It's a basic, fundamental construct. It is based on the *if* and *else* keywork, and can be used individually, nested, or consecutively.
+
+```c
+if(condition)
+{
+    ...
+}
+else if(another_condition)
+{
+    ...   
+}
+//Gets executed only if the code didn't meet the other conditions
+else
+{
+    ...    
+}
+```
 
 #### switch
-wip
+It is used as an alternative to the if-else, to have a cleaner code and easier to maintain. 
+
+```c
+switch(expression)
+{
+    case decision1:
+        ...
+        //The break lets you exit the switch after executing the code before it
+        break; 
+        
+    case decision2:
+        ...
+        break;
+    .
+    .
+    .
+    case decisionN:
+        ...
+        break;
+        
+    /*
+    The default case is always the last one in a switch. The code inside it
+    gets executed if neither of the indicated cases get activated.
+    */
+    default:
+        //code
+}
+```
 
 #### while
-wip
+It's an iterative structure, that executes the code as long as the condition is met
+
+```c
+while(condition)
+{
+    ...
+}
+```
 
 #### do-while
-wip
+Like a while, but the difference is that it executes the code at least once.
+
+```c
+do
+{
+    ...
+}
+while(condition);
+```
 
 #### for
-wip
+A for-loop has two parts: a header specifying the iteration, and a body which is executed once per iteration. The header often declares an explicit loop counter or loop variable, which allows the body to know which iteration is being executed. For-loops are typically used when the number of iterations is known before entering the loop.
+
+```c
+for(int i = 0; i < counter; i++)
+{
+    ...
+}
+```
 
 ---
 
