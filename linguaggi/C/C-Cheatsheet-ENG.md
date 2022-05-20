@@ -231,7 +231,7 @@ for(int i = 0; i < counter; i++)
 ---
 
 ### Functions
-wip
+They are used to divide the code in smaller pieces, to avoid repetition, make it easier to maintain and modify, and *cleaner*. 
 
 ```c
 return_type function_name(parameter_type parameter_name)
@@ -241,18 +241,79 @@ return_type function_name(parameter_type parameter_name)
 }
 ```
 
+An example can be a function to do an addition:
+
+```c
+int addition(int a, int b)
+{
+    return a + b;
+}
+```
+
 #### Recursion
-wip
+It is a very powerfull programming technique, based on the idea of diving a problem in similar, smaller problems, but easier.
+
+```c
+int fibonacci(int n)
+{
+    if(n == 0)
+    {
+        return 0;
+    }
+    else if(n == 1)
+    {
+        return 1;
+    }
+    
+    return (fibonacci(n - 1) + fibonacci(n - 2));
+}
+```
 
 ---
 
 ### Array
-wip
+Arrays are a static collection of datas of the same type. The declaration is as follows:
+
+```c
+type array_name[size];
+```
+
+Try to use it with some characters:
+
+```c
+//Declaring the array with it's content, with a capacity of 3
+char array = {a, b, c};
+/*
+The printf is a function that prints on the monitor what we indicate inside it, in our case the %c
+indicates that it is going to take a character from a variable, the one after the comma.
+The variable that will be shown is the letter 'a', as the first element of our array is called, 
+while the last one will always be in the size -1 position.
+*/
+printf("%c", array[0]);
+```
 
 ---
 
 ### Pointers
-wip
+It's a particular type of variable.
+There are two fundamental symbols associated to them:
+  - `*` Needed to declare or have the value of a pointer.
+  - `&` Needed to have the memory address and access the pointer.
+
+They are very versatile in C, and can be used along with arrays:
+
+```c
+/*
+I declare and array and a pointer. Then, the pointer will have the value of the address of the third object of the array.
+*/
+int array[4];
+int *puntatore;
+puntatore = &array[3];
+```
+
+<p align="center">
+  <img src="https://publications.gbdirect.co.uk//c_book/figures/5.4.png" />
+</p>
 
 ---
 
