@@ -309,7 +309,7 @@ Sono versatili e sono fondamentali in C, e per esempio possiamo usarli assieme a
 /*
 Dichiaro un array e un puntatore. Poi il puntatore avrà come valore l'indirizzo della posizione 3 dell'array
 */
-int array[3];
+int array[4];
 ...
 int *puntatore;
 puntatore = &array[3];
