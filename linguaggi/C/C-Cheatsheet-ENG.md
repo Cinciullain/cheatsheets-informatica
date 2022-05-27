@@ -113,9 +113,9 @@ void main(){
 | Operators | Example     | Meaning           |
 | --------- | :---------: | ----------------- |
 | +         | a + b       | Addition          |
-| ++        | a++ or ++a   | Increment by 1    |
+| ++        | a++ or ++a  | Increment by 1   |
 | -         | a - b       | Subtraction       |
-| --        | a-- or --a   | Decrement by 1    |
+| --        | a-- or --a  | Decrement by 1   |
 | *         | a * b       | Multiplication    |
 | /         | a / b       | Division          |
 | %         | a % b       | Module            |
@@ -134,7 +134,7 @@ void main(){
 
 #### Bitwise
 
-| Operators | Example     | Meaning        |
+| Operators | Example     | Meaning            |
 | --------- | :---------: | ------------------ |
 | <<        | a << 1      | Shift a sinistra   |
 | >>        | a >> 1      | Shift a destra     |
@@ -307,8 +307,8 @@ They are very versatile in C, and can be used along with arrays:
 I declare and array and a pointer. Then, the pointer will have the value of the address of the third object of the array.
 */
 int array[4];
-int *puntatore;
-puntatore = &array[3];
+int *pointer;
+pointer = &array[3];
 ```
 
 <p align="center">
@@ -318,18 +318,103 @@ puntatore = &array[3];
 ---
 
 ### Strings
-wip
-
+Strings don't exist in C as a type, so they get represented as an array of char, and the last element must always be `\0`.
+Some of the most important functions to operate with strings:
+  - Length of a string 
+  ```c 
+  strlen(s); 
+  ```
+  
+  - Compare two stringhs
+  ```c
+  strcmp(s1, s2);
+  ```
+  
+  - Copy a string inside another one
+  ```c
+  strcpy(s1, s2);
+  ```
+  
+  - Concatenate a string to another one
+  ```c
+  strcat(s1, s2);
+  ```
 ---
 
 ### Structs
-wip
+With structures you can create particular types of data, that may contain different types inside of it.
 
+```c
+struct student
+{
+    char name[30];
+    char surname[20];
+    int id;
+    int age;
+}; 
+```
 ---
 
 ### File Handling
-wip
+Using and handling files is a very important part in C, I will show the base of it as follows.
 
+- Create a pointer to access the file
+```c
+FILE *fPtr;
+```
+
+- Open the file
+```c
+fPtr = fopen("file_path", condition);
+/*
+The condition can be of 6 typpes:
+    - r: Open the file in read; It must exist.
+    - r+: Open the file in read/write; It must exist.
+    - w: Create a new file in write; If it exists it gets overwritten.
+    - w+: Create a new file in write/read; If it exists it gets overwritten.
+    - a: Append to the file; If it doesn't exist it gets created. 
+    - a+: Append to the file and read it; If it doesn't exist it gets created.
+*/ 
+```
+
+- Read the content of a file
+```c
+fscanf(FILE *fPtr, format, arguments);
+
+//An example of use can be
+fscanf(fPtr, "%s %s %d", &name, &surname, &age);
+```
+
+- Write in a file
+```c
+fprintf(FILE *fPtr, format, arguments);
+```
+
+An use example of a file is as follows:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{
+    FILE *fPtr;
+ 
+    if((fPtr = fopen("file.txt", "r")) == NULL)
+    {
+        printf("File not found");
+        exit(1);
+    }
+ 
+ 
+    char string[100];
+    while (fscanf(fPtr, "%s", string) != EOF)
+    {
+        printf("%s \n", string);
+    }
+ 
+    return 0;
+}
+```
 ---
 
 ### Dynamic Memory Allocation
