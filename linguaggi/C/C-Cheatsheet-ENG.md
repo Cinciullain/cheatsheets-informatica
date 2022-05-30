@@ -431,7 +431,18 @@ v
 
 #### Escape Sequences
 
-v
+| Sequence           | Output                   |
+| ------------------ | ------------------------ |
+| \a                 | Produces a beep          |
+| \b                 | Backspace                |
+| \f                 | Form Feed                |
+| \n                 | New Line                 |
+| \t                 | Tab (4 spaces)           |
+| \v                 | Tab (vertical)           |
+| &#92;&#92;         | Backslash                |
+| &#92;"             | Quotation marks          |
+| &#92;'             | Quotation mark           |
+| &#92;?             | Question mark            |
 
 ---
 
@@ -439,4 +450,6 @@ v
 wip
 
 ### Extra
-wip
+- C Open source books:
+  - [The C book](https://publications.gbdirect.co.uk//c_book/)
+  - [C Elements of Style](http://www.oualline.com/books.free/style/index.html)
