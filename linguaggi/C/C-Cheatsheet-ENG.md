@@ -418,16 +418,54 @@ int main()
 ---
 
 ### Dynamic Memory Allocation
-wip
+If you don't know the size of your array beforehand, or of a data structure, you can't statically allocate the memory with `char name[20]` for example, but you must use a more complex construct, the dynamic allocation. However, it is risky to use in machines with limited resources, like little embedded boards.
+
+For example, if we don't know how many chars we are going to receive as input, we must proceed as follows for each char:
+```c
+char *string;
+string = (char*)malloc(sizeof(char));
+
+/*
+- (char*): This first piece is an explicit cast, needed to let the compiler understand that the following command must be seen as a char pointer.
+- malloc(): Is the function that effectively allocates the memory. The argument that stays inside the parenthesis is the size in bytes that is needed for that type of variable.
+- sizeof(char): To avoid size errors, we use this function to indicate the exact size of the variable we are allocating.
+*/
+```
+
+When using this kind of memory allocation, it is very important to free it after the use, and it is done with this:
+```c
+free(&pointer);
+```
+
+Two other methods to use this functionality are also:
+- ```c
+  *var = (type*)calloc(n, size);
+  ```
+
+- ```c
+  *var = realloc(*var2, n);
+  ```
 
 ---
 
 ### Text Formatting
-wip
+In C it is really important to know how to use the print and scan functions, using them in the correct and most efficent manner, to keep a clean and readable code.
 
 #### Format Specifiers
 
-v
+| Identifier     | Type             |
+| -------------- | ---------------- |
+| %c             | char             |
+| %d             | int              |
+| %f             | float            |
+| %lf            | double           |
+| %l             | long             |
+| %Lf            | long double      |
+| %lld           | long long        |
+| %o             | ottale           |
+| %p             | pointer          |
+| %s             | string           |
+| %%             | prints %         |
 
 #### Escape Sequences
 
