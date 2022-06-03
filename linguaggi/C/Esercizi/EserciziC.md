@@ -55,7 +55,7 @@ Un esempio di esecuzione è:
 
 **La mia [soluzione](4_ContaCaratteriSpaziCifre.c).**
 
-### Esercizio 5 - Manipolare di Stringhe
+### Esercizio 5 - Manipolatore di Stringhe
 Manipolare le stringhe in 3 modi: Compare, Copy, Length. Creare una alternativa per array e una per puntatori per ogni funzione. 
 
 Un esempio di esecuzione è:
