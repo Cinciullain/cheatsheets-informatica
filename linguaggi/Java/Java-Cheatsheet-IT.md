@@ -17,6 +17,7 @@
   - [Ricorsione](#ricorsione)
 - [Stringhe](#stringhe)
 - [Modificatori di Accesso e Non](#modificatori-di-accesso-e-non)
+- [Eccezioni](#eccezioni)
 - [Classi](#classi)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
