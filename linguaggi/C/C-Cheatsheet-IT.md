@@ -286,7 +286,7 @@ Un esempio pratico di utilizzo può essere la rappresentazione di alcune lettere
 
 ```c
 //Dichiaro direttamente l'array con il contenuto, così lo crea con una grandezza di 3
-char array = {a, b, c};
+char array = {'a', 'b', 'c'};
 /*
 Il printf è una funzione che stampa a schermo quello che gli indichiamo, in questo caso il %c
 indica che verrà preso un carattere da una variabile, indicata dopo la virgola.
