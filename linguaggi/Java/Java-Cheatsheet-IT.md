@@ -20,6 +20,7 @@
 - [Modificatori di Accesso e Non](#modificatori-di-accesso-e-non)
 - [Classi](#classi)
 - [Polimorfismo](#polimorfismo)
+- [Ereditarietà](#ereditarietà)
 - [Eccezioni](#eccezioni)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
@@ -410,6 +411,78 @@ public Bicicleta()
 ---
 
 ### Polimorfismo
+È un concetto per cui viene concesso ad uno stesso oggetto di comportarsi differentemente a seconda della situazione
+Esistono due tipi di polimorfismo:
+  1. In fase di compilazione (Compile Time Polymorphism)
+  2. In fase di esecuzione (Run Time Polymorphism)
+
+#### 1. Compile Time Polymorphism
+Può essere ottenuto tramite l'overloading dei metodi, come spiegato [qui](#overloading).
+
+```java
+  public class Cerchio
+  {
+
+    public void draw()
+    {
+      System.out.println("Disegna un cerchio default nero con 1cm di diametro.");
+    }
+
+    public void draw(int diametro)
+    {
+      System.out.println("Cerchio nero con diametro di " + diametro + "cm.");
+    }
+
+    public void draw(int diametro, String colore)
+    { 
+      System.out.println("Cerchio di colore " + colore + " e diametro di " + diametro + "cm.");
+    }
+  }
+```
+#### 2. Run Time Polymorphism
+È ottenuto soltando se si lavora con sottoclassi (classi figlio) di altre superclassi, in cui tutte implementino uno stesso metodo (o più) applicando sempre il concetto di overriding.
+
+```java
+    public class Figura 
+    {
+	      public void draw();
+    }
+```
+```java
+    public class Cerchio extends Figura
+    {
+        @Override
+        public void draw()
+        {
+            System.out.println("Disegno del cerchio");
+        }
+    }
+```
+```java
+    public class Quadrato extends Figura
+    {
+        @Override
+        public void draw()
+        {
+            System.out.println("Disegno del quadrato");
+        }
+    }
+```
+`Figura` è la superclasse, mentre `Cerchio` e `Quadrato` sono le due sottoclassi. Di seguito la dimostrazione del polimorfismo: 
+
+```java
+    Figura fg1 = new Cerchio();
+    fg1.draw();
+
+    Figura fg2 = new Quadrato();
+    fg2.draw();
+    
+    //In questo caso viene riconosciuto a runtime quale metodo chiamare a seconda dell'oggetto creato.
+```
+
+---
+
+### Ereditarietà
 WIP
 
 ---
