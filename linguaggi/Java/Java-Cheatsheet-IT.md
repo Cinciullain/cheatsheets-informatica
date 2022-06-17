@@ -305,4 +305,21 @@ Di seguito alcune delle funzioni più importanti per le operazioni sulle stringh
 ---
 
 ### Modificatori di Accesso e Non
+- #### Modificatori
+  - default: Tutte le dichiarazioni sono visibili all'interno del package (Viene presa implicitamente se non scritta).
+  - private: Tutte le dichiarazioni sono visibili all'iterno della classe.
+  - public: Tutte le dichiarazioni sono visibili ovunque.
+  - protected: Tutte le dichiarazioni sono visibili all'interno del package e delle sottoclassi.
+  
+- #### Non Modificatori
+  - static: Gli attributi e i metodi appartengono alla classe, piuttosto che all'oggetto.
+  - final: Gli attributi e i metodi non possono essere modificati/sovrascritti.
+  - transient: Gli attributi e i metodi vengono saltati quando gli oggetti che li contengono vengono serializzati.
+  - abstract: Viene utilizzati nelle classi astratte.
+  - synchronized: I metodi possono avere accesso da un solo thread alla volta.
+  - volatile: Il valore dell'attributo non viene salvato in una cache locale al thread, ma nella memoria principale.
+
+---
+
+### Eccezioni
 WIP
