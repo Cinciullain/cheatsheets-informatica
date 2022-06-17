@@ -14,6 +14,7 @@
 - [Strutture di Controllo di Flusso](#strutture-di-controllo-di-flusso)
 - [Array](#array)
 - [Funzioni](#funzioni)
+  - [Overloading](#overloading)
   - [Ricorsione](#ricorsione)
 - [Stringhe](#stringhe)
 - [Modificatori di Accesso e Non](#modificatori-di-accesso-e-non)
@@ -180,3 +181,128 @@ for(int i = 0; i < contatore; i++)
 ```
 
 ---
+
+### Array
+Sono una collezione di dati di tipo statico dello stesso tipo, come interi, double o char. La loro dichiarazione è come segue:
+
+```java
+tipo_variabile[] nome_array;
+
+int[] array = new int[5];
+```
+
+Un esempio pratico di utilizzo può essere la rappresentazione di alcune lettere.
+
+```java
+//Dichiaro direttamente l'array con il contenuto, così lo crea con una grandezza di 3
+char[] array = {'a', 'b', 'c'};
+
+/*
+Il println è una funzione che stampa a schermo quello che gli indichiamo.
+In questo caso la variabile che mostrerà sarà la a, perchè il primo elemento di un array
+è sempre in posizione 0, mentre l'ultimo è sempre in posizione n - 1.
+*/
+System.out.println("Posizione 0 =" + array[0]);
+```
+
+#### Lunghezza di un Array
+
+```java
+System.out.println(array.length());
+```
+
+---
+
+### Funzioni
+Le funzioni sono utilizzate per dividere il codice ed evitare la ripetitività, rendendolo più facilmente mantenibile e modificabile, oltre a renderlo più ordinato.
+
+```java
+tipo_restituito nome_funzione(tipo_parametro nome_parametro)
+{
+    ...
+    return risultato;
+}
+```
+
+Un esempio può essere una funzione di addizione:
+
+```java
+int addizzione(int a, int b)
+{
+    return a + b;
+}
+```
+
+#### Overloading
+Java fornisce un sistema di overloading delle funzioni, che permette di avere funzioni con stessi nomi, ma con diversi parametri e/o funzionamento.
+
+```java
+//Metodo 1
+void saluta()
+{
+    System.out.println("Ciao");
+}
+
+//Metodo 2
+void saluta(String nome)
+{
+    System.out.println("Ciao " + nome);
+}
+```
+
+#### Ricorsione
+La ricorsione è una tecnica di programmazione molto potente, che sfrutta l'idea di suddividere un problema da risolvere in sottoproblemi simili a quello originale, ma più semplici.
+
+```java
+int fibonacci(int n)
+{
+    if(n == 0)
+    {
+        return 0;
+    }
+    else if(n == 1)
+    {
+        return 1;
+    }
+    
+    return (fibonacci(n - 1) + fibonacci(n - 2));
+}
+```
+  
+---
+
+### Stringhe
+Le stringhe non esistono come tipo in Java, ma come classe, concetto spieato di seguito.
+Si dichiara come segue:
+
+```java 
+  String stringa1 = new String("ciao");
+  String stringa2 = "Ciao";
+  ```
+
+Di seguito alcune delle funzioni più importanti per le operazioni sulle stringhe:
+
+  - Lunghezza di una stringa 
+  ```java 
+  stringa.length(); 
+  ```
+  
+  - Comparare due stringhe
+  ```java
+  s1.compareTo(s2);
+  ```
+  
+  - Quale carattere è presente in una data posizione
+  ```java
+  s1.charAt(n);
+  ```
+  
+  - Concatena una stringa ad un'altra
+  ```java
+  s1.concat(s2);
+  ```
+
+---
+
+### Modificatori di Accesso e Non
+WIP
