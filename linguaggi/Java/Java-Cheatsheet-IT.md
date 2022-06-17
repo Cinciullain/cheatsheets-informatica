@@ -19,6 +19,7 @@
 - [Stringhe](#stringhe)
 - [Modificatori di Accesso e Non](#modificatori-di-accesso-e-non)
 - [Classi](#classi)
+- [Polimorfismo](#polimorfismo)
 - [Eccezioni](#eccezioni)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
@@ -322,6 +323,93 @@ Di seguito alcune delle funzioni più importanti per le operazioni sulle stringh
 ---
 
 ### Classi
+Una classe è un insieme di attributi e funzioni, ed ogni classe può avere quanti oggetti si vogliano, che prendono le funzionalità appunto dalla classe.
+Le classi possono essere come segue:
+
+  ```java
+  public class Bicicletta
+  {
+      public int marcia;
+      public int cadenza;
+      public int velocita;
+        
+      public Bicicletta(int marciaIniziale, int cadenzaIniziale, int velocitaIniziale)
+      {
+          marcia = marciaIniziale;
+          cadenza = cadenzaIniziale;
+          velocita = velocitaIniziale;
+      }
+        
+        public void setMarcia(int nuovaMarcia)
+        {
+            marcia = nuovaMarcia;
+        } 
+        public void setCadenza(int nuovaCadenza)
+        {
+            cadenza = nuovaCadenza;
+        }   
+        public void frena(int decremento)
+        {
+            velocita -= decremento;
+        }  
+        public void accelera(int incremento)
+        {
+            velocita += incremento;
+        }
+}
+  ```
+
+Esiste anche una funzione di implementazine ed estensione delle classi:
+
+```java
+class ClasseFiglio extends ClassePadre implements Interfaccia
+{
+    /*
+    Questa classe dovrà implementare tutte le funzioni della classe padre ed i funzionamenti della interfaccia, se indicato esplicitamente da quest'ultima
+    
+    ClasseFiglio è una sottoclasse di ClassePadre, che a sua volta implementa Interfaccia
+    */
+}
+```
+
+#### Costruttore 
+Ogni classe contiene almeno un costruttore, che viene invocato alla creazione dell'oggetto dal "progetto" della classe stessa.
+Le dichiarazione di questi costruttori sembrano come se fossero dei metodi, e devono avere lo stesso nome della classe e non hanno un tipo di ritorno.
+Ogni classe ha un costruttore default senza argomenti, anche se non viene dichiarato.
+
+```java
+/*
+Facendo finta di essere all'interno della classe bicicletta:
+
+- Un primo costruttore, che inizializza i valori a seconda di quelli inseriti
+- Un secondo cosruttore senza parametri che inizializza tutto a zero
+- Un terzo, che risulterebbe quello di default implicito
+*/
+
+
+public Bicicletta(int marciaIniziale, int cadenzaIniziale, int velocitaIniziale)
+{
+    marcia = marciaIniziale;
+    cadenza = cadenzaIniziale;
+    velocita = velocitaIniziale;
+}
+      
+public Bicicletta()
+{
+    marcia = 0;
+    cadenza = 0;
+    velocita = 0;
+}
+      
+public Bicicleta()
+{
+    super();
+}
+```
+
+---
+
+### Polimorfismo
 WIP
 
 ---
