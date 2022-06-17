@@ -18,8 +18,8 @@
   - [Ricorsione](#ricorsione)
 - [Stringhe](#stringhe)
 - [Modificatori di Accesso e Non](#modificatori-di-accesso-e-non)
-- [Eccezioni](#eccezioni)
 - [Classi](#classi)
+- [Eccezioni](#eccezioni)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
   - [Identificatori di Formato](#identificatori-di-formato)
@@ -318,6 +318,11 @@ Di seguito alcune delle funzioni più importanti per le operazioni sulle stringh
   - abstract: Viene utilizzati nelle classi astratte.
   - synchronized: I metodi possono avere accesso da un solo thread alla volta.
   - volatile: Il valore dell'attributo non viene salvato in una cache locale al thread, ma nella memoria principale.
+
+---
+
+### Classi
+WIP
 
 ---
 
