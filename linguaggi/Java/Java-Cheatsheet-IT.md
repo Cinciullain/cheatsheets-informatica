@@ -21,14 +21,14 @@
 - [Classi](#classi)
 - [Polimorfismo](#polimorfismo)
 - [Ereditarietà](#ereditarietà)
-- [Eccezioni](#eccezioni)
 - [Astrazione](#astrazione)
   - [Classe Astratta](#classe-astratta)
   - [Interfaccia](#interfaccia)
 - [Incapsulazione](#incapsulazione)
+- [Eccezioni](#eccezioni)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
-  - [Identificatori di Formato](#identificatori-di-formato)
+  - [Specificatori di Formato](#identificatori-di-formato)
   - [Sequenze di Escape](#sequenze-di-escape)
 - [Garbage Collection](#garbage-collection)
 - [Q & A](#q--a)
@@ -657,3 +657,74 @@ public class InsufficientFundsException extends RuntimeException
    }
 }
 ```
+
+---
+
+### Gestione dei File
+È fondamentale saper gestire ed utilizzare i file, di seguito le basi per poterli sfruttare.
+
+- Aprire il file
+```java
+
+```
+
+- Leggere il contenuto di un file
+```java
+
+```
+
+- Scrivere su di un file
+```java
+
+```
+
+Un esempio di utilizzo dei file può essere il seguente:
+```java
+
+```
+
+---
+
+### Formattazione del Testo
+Saper utilizzare i diversi print e scan in modo correto è fondamentale, utilizzandoli in modo completo e ordinato, così da tenere ordine nel proprio codice.
+
+#### Specificatori di Formato
+
+| Identificatore    | Tipo                |
+| ----------------- | ------------------- |
+| %c o %C           | char o CHAR         |
+| %d                | int                 |
+| %f                | float               |
+| %x                | hex                 |
+| %o                | octal               |
+| %e                | exponential         |
+| %a                | float hex           |
+| %tx               | Date and Time       |
+| %b o %B           | true o TRUE         |
+| %s o %S           | string o STRING     |
+| %%                | stampa il %         |
+
+#### Sequenze di Escape
+
+| Sequenza           | Output                   |
+| ------------------ | ------------------------ |
+| \r                 | Carriage Return          |
+| \b                 | Backspace                |
+| \f                 | Form Feed                |
+| \n                 | Nuova riga               |
+| \t                 | Tab (4 spazi)            |
+| &#92;&#92;         | Backslash                |
+| &#92;"             | Virgolette               |
+| &#92;'             | Virgoletta               |
+| &#92;?             | Punto di domanda         |
+
+---
+
+### Q & A
+WIP
+
+### Extra
+- Libri open source di Java
+  - [Introduction to Programming Using Java](https://math.hws.edu/eck/cs124/downloads/javanotes8.pdf)
+  - [Java, Java, Java: Object-Oriented Problem Solving](http://www.cs.trincoll.edu/~ram/jjj/jjj-os-20170625.pdf)
+
