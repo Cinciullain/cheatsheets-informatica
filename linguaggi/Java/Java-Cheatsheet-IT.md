@@ -25,6 +25,7 @@
 - [Astrazione](#astrazione)
   - [Classe Astratta](#classe-astratta)
   - [Interfaccia](#interfaccia)
+- [Incapsulazione](#incapsulazione)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
   - [Identificatori di Formato](#identificatori-di-formato)
@@ -493,19 +494,16 @@ Si usa invece `implements` per implementare ed ereditare una interfaccia.
 ```java
     public class SuperClasse
     {
-     
     }
 ```
 ```java
     public interface SuperInterfaccia
     {
-      
     }
 ```
 ```java
     public class SottoClasse extends SuperClasse implements SuperInterfaccia
     {
-      
     }
 ```
 
@@ -564,5 +562,98 @@ Le interfacce sono il progetto di una classe. Al suo interno si possono avere me
 
 ---
 
+### Incapsulazione
+È un meccanismo utilizzato per l'accesso ristretto ai membri di una classe e ai metodi, e per implementare l'astrazione in OOP.
+Fornisce anche un modo per nascondere i dati, in quanto quelli presenti in una classe sono nascosti dalle altre classi.
+Il modo migliore per sfruttare questo meccanismo, è dichiarando tutte le variabili di una classe private, utilizzando poi metodi pubblici all'interno della stessa per poter accedere, chiamati di solito setters e getters.
+
+Un buon esempio di incapsulazione è il POJO (Plain-Java-Object-Class):
+ ```java
+    public class Utente
+    {
+        private String username;
+        private String password;
+
+        public String getUsername()
+	{
+          return username;
+        }
+
+        public void setUsername(String username)
+	{
+          this.username = username;
+        }
+
+        public String getPassword()
+	{
+          return password;
+        }
+
+        public void setPassword(String password)
+	{
+          this.password = password;
+        }
+    }
+ ```
+ 
+---
+
 ### Eccezioni
-WIP
+Le eccezioni sono un importantissimo funzionamento in Java, e permettono di gestire in modo molto meticoloso il programma quando si va incontro ad un errore.
+Si gestiscono tramite delle classi, e si possono usare quelle definite da Java, e creare delle proprie classi di per farlo, che estendono quelle base.
+
+Per "catturare" le eccezioni, Java offre un costrutto molto particolare ed efficente:
+```java
+try
+{
+//Codice che potrebbe generare errori
+}
+catch(Eccezione e)
+{
+//Codice da eseguire nel caso avvenga l'errore
+}
+finally
+{
+//Codice che viene sempre eseguito, anche in caso di eccezione
+}
+```
+
+Se si vogliono gestire eventuali errori che possono essere generati da un nostro metodo o una nostra classe, basta aggiungere la parola chiave `throws`.
+Un esempio può essere:
+```java
+import java.io.*;
+
+public class Classe
+{
+   public void preleva(double quantita) throws RemoteException, InsufficientFundsException 
+   //Le due parole dopo il throws sono due classi, ipotetiche, per gestire l'eventuale eccezione
+   {
+      //Corpo metodo
+   }
+}
+```
+
+Ecco come potrebbe essere implementata una delle due classi per gestire le eccezioni:
+```java
+import java.io.*;
+
+public class InsufficientFundsException extends RuntimeException
+{
+   private double quantita;
+   
+   public InsufficientFundsException(String msg)
+   {
+      super(msg);
+   }
+   
+   public InsufficientFundsException(double quantita)
+   {
+      this.quantita = quantita;
+   }
+   
+   public double getquantita()
+   {
+      return quantita;
+   }
+}
+```
