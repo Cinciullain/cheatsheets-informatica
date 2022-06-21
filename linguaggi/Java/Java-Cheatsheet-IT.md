@@ -22,6 +22,9 @@
 - [Polimorfismo](#polimorfismo)
 - [Ereditarietà](#ereditarietà)
 - [Eccezioni](#eccezioni)
+- [Astrazione](#astrazione)
+  - [Classe Astratta](#classe-astratta)
+  - [Interfaccia](#interfaccia)
 - [Gestione dei File](#gestione-dei-file)
 - [Formattazione del Testo](#formattazione-del-testo)
   - [Identificatori di Formato](#identificatori-di-formato)
@@ -483,7 +486,81 @@ Può essere ottenuto tramite l'overloading dei metodi, come spiegato [qui](#over
 ---
 
 ### Ereditarietà
-WIP
+È il meccanismo di riutilizzo del codice. L'oggetto che viene ereditato si chiama  *superclasse*, mentre l'oggetto che eredita, *sottoclasse*. 
+Si usa la parola chiave `extends` per ereditare una classe.
+Si usa invece `implements` per implementare ed ereditare una interfaccia.
+
+```java
+    public class SuperClasse
+    {
+     
+    }
+```
+```java
+    public interface SuperInterfaccia
+    {
+      
+    }
+```
+```java
+    public class SottoClasse extends SuperClasse implements SuperInterfaccia
+    {
+      
+    }
+```
+
+---
+
+### Astrazione
+L'astrazione è il concetto di nascondere i dettagli interni e descrivere i funzionamenti interni in termini semplici, solo lo "scheletro" di una classe o interfaccia.
+Può essere ottenuta in due modi:
+  1. Classe Astratta
+  2. Interfaccia
+
+#### 1. Classe Astratta
+Una classe astratta deve essere definita  con la parola chiave `abstract`:
+	- Non può essere istanziata.
+	- Può avere metodi astratti e non.
+	- Può avere il costruttore.
+	- Può avere metodi `final` che impediscono alle sottoclassi di modificare il corpo di un metodo.
+
+```java
+    abstract class Fiore
+    {
+        abstract String Odore();
+	
+        String Nettare()
+	{  
+            System.out.println("Il fiore ha nettare");
+        }
+    }
+
+    public class Margherita extends Fiore
+    {
+        private String Odore()
+	{ 
+            System.out.println("La Margherita ha un buon profumo");
+        }
+    }
+```
+
+#### 2. Interfaccia
+Le interfacce sono il progetto di una classe. Al suo interno si possono avere metodi astratti, statici e default.
+
+```java
+    interface Stampa
+    {  
+        void stampaFoglio();  
+    }  
+    
+    public class A4 implements Stampa
+    {  
+        public void stampaFoglio()
+	{
+            System.out.println("A4 stampato.");
+        }  
+    }
+```
 
 ---
 
