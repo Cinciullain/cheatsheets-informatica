@@ -30,6 +30,12 @@
 - [Formattazione del Testo](#formattazione-del-testo)
   - [Specificatori di Formato](#identificatori-di-formato)
   - [Sequenze di Escape](#sequenze-di-escape)
+- [Java Collection Framework](#java-collection-framework)
+  - [Set](#stack)
+  - [List](#queue)
+  - [Map](#map)
+  - [Iterator](#iterator)
+  - [Comparable e Comparator](#comparable-e-comparator)
 - [Garbage Collection](#garbage-collection)
 - [Q & A](#q--a)
 - [Extra](#extra)
@@ -661,26 +667,69 @@ public class InsufficientFundsException extends RuntimeException
 ---
 
 ### Gestione dei File
-È fondamentale saper gestire ed utilizzare i file, di seguito le basi per poterli sfruttare.
-
-- Aprire il file
+È fondamentale saper gestire ed utilizzare i file, di seguito un programma per poterli sfruttare:
 ```java
-
-```
-
-- Leggere il contenuto di un file
-```java
-
-```
-
-- Scrivere su di un file
-```java
-
-```
-
-Un esempio di utilizzo dei file può essere il seguente:
-```java
-
+import java.io.File;
+import java.io.FileWriter; 
+import java.io.FileNotFoundException; 
+import java.io.IOException; 
+import java.util.Scanner; 
+  
+public class Classe
+{
+    public static void main(String[] args)
+    {
+        try
+	{
+	    /*
+	    Creo un oggetto collegato al file, creo uno scanner che permette di leggere da tale.
+	    Faccio un ciclo che legge una riga per volta finchè non si arriva alla fine, e concludo chiudendo lo stream di lettura.
+	    
+	    Infine cancello il file
+	    */
+	    
+            File file = new File("testo.txt");
+            Scanner scanner = new Scanner(file);
+	    
+            while (scanner.hasNextLine())
+	    {
+                String riga = scanner.nextLine();
+                System.out.println(riga);
+            }
+	    
+            scanner.close();
+	    
+            if (file.delete())
+	    {
+                System.out.println("Il file cancellato e\': " + file.getName());                
+            }
+            else
+	    {
+                System.out.println("Impossibile cancellare");
+            }
+        }
+        catch (FileNotFoundException e)
+	{
+            System.out.println("File non trovato");
+            e.printStackTrace();
+        }
+	
+	try
+	{
+	    /*
+	    Creo un FileWriter che permette di creare un file nel caso non esiste, o sostituirlo altrimenti.
+	    Uso poi un writer per poterci scrivere sopra, e poi chiudo lo stream al termine.
+	    */
+            FileWriter nuovoFile = new FileWriter("nuovoFile.txt");
+            Writer.write("Riga scritta nel nostro file");    
+            Writer.close();
+        }
+        catch (IOException e) {
+            System.out.println(e);
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 ---
@@ -720,6 +769,30 @@ Saper utilizzare i diversi print e scan in modo correto è fondamentale, utilizz
 
 ---
 
+### Java Collection Framework
+WIP
+
+#### Set
+WIP
+
+#### List 
+WIP
+
+#### Map
+WIP
+
+#### Iterator
+WIP
+
+#### Comparable e Comparator
+WIP
+
+---
+
+### Garbage Collection
+WIP
+
+---
 ### Q & A
 WIP
 
