@@ -793,10 +793,15 @@ WIP
 Ogni avvio della JVM è accompagnato anche dal GC, un programma che si occupa di gestire l'utilizzo della memoria in modo autonomo.
 Se nel nostro codice inseriamo viariabili come un int, od oggetti come String, che vengono però utilizzati solo nelle prime righe di codice, ma poi mai più utilizzati per le seguenti 500, il GC considererà queste come "garbage". Una volta accumulata una certa quantità, e con la memoria che magari si avvicina all'esaurimento, va in funzione il meccanismo del GC di rimozione e cancellazione dallo stack, così da liberare la memoria che serve per continuare ad eseguire il programma senza problemi. 
 
-Il primo passaggio di questo processo viene chiamato __Marking__ , e consiste nel identificare i blocchi di memoria che sono utilizzati e non.
+1. Il primo passaggio di questo processo viene chiamato __Marking__ , e consiste nel identificare i blocchi di memoria che sono utilizzati e non.
 
-![Marking](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM%20Marking.PNG)
+![Marking](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_Marking.png)
 
+Gli oggetti referenziati sono mostrati in blu, mentre i non referenziati in arancio. Per fare questa determinazione, ogni oggetto viene scansionato, rendendolo un processo molto lungo e pesante in termini di risorse se si lavora su un progetto molto complesso, ramificato e poco ottimizzato.
+
+2. Avviene poi il processo di __Normal Deletion__, che rimuove tutti gli oggetti non referenziati, lasciando il resto intatto.
+
+![Normal Deletion](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_NormalDeletion.png)
 
 ---
 ### Q & A
