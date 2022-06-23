@@ -795,7 +795,7 @@ Se nel nostro codice inseriamo viariabili come un int, od oggetti come String, c
 
 Il primo passaggio di questo processo viene chiamato __Marking__ , e consiste nel identificare i blocchi di memoria che sono utilizzati e non.
 
-![Marking](https://imgur.com/yqooOPr)
+![Marking](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM%20Marking.PNG)
 
 
 ---
