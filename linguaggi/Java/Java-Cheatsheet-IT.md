@@ -803,6 +803,13 @@ Gli oggetti referenziati sono mostrati in blu, mentre i non referenziati in aran
 
 ![Normal Deletion](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_NormalDeletion.png)
 
+Il sistema di allocazione della memoria salverà gli indirizzi che sono stati liberati, così da poter ora sfruttare quegli spazi.
+
+3. L'ultimo passo è quello di compattare la memoria, così da ottimizzare il suo utilizzo, ed il passaggio viene appunto chiamato __Compacting__.
+
+![Compacting](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_Compacting.png)
+
+Source: https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
 ---
 ### Q & A
 WIP
