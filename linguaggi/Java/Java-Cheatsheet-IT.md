@@ -793,8 +793,9 @@ WIP
 Ogni avvio della JVM è accompagnato anche dal GC, un programma che si occupa di gestire l'utilizzo della memoria in modo autonomo.
 Se nel nostro codice inseriamo viariabili come un int, od oggetti come String, che vengono però utilizzati solo nelle prime righe di codice, ma poi mai più utilizzati per le seguenti 500, il GC considererà queste come "garbage". Una volta accumulata una certa quantità, e con la memoria che magari si avvicina all'esaurimento, va in funzione il meccanismo del GC di rimozione e cancellazione dallo stack, così da liberare la memoria che serve per continuare ad eseguire il programma senza problemi. 
 
-Il primo passaggio di questo processo viene chiamato ** Marking **, e consiste nel identificare i blocchi di memoria che sono utilizzati e non.
-![Marking](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/css/images/show_image_h.png)
+Il primo passaggio di questo processo viene chiamato ** Marking ** , e consiste nel identificare i blocchi di memoria che sono utilizzati e non.
+
+![Marking](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/images/gcslides/Slide3.png)
 
 
 ---
