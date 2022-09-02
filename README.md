@@ -47,6 +47,7 @@ Website Link: [(WIP)]()
 
   - C - ✔️
   - Java - WIP
+  - Java - WIP
   - Python - WIP
   - Git - WIP
   - VSCode - WIP
