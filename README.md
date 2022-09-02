@@ -12,13 +12,22 @@ Website Link: [(WIP)]()
 <details>
 <summary> Cheatsheets </summary>
   
-  - [C - IT](linguaggi/C/C-Cheatsheet-IT.md)
-  - [C - ENG](linguaggi/C/C-Cheatsheet-ENG.md)
-  - [Java - IT](linguaggi/Java/Java-Cheatsheet-IT.md)
-  - [Java - ENG](linguaggi/Java/Java-Cheatsheet-ENG.md)
-  - [Python - IT](linguaggi/Python/Python-Cheatsheet-IT.md)
-  - [Python - ENG](linguaggi/Python/Python-Cheatsheet-ENG.md)
+  - [C - IT](argomenti/C/C-Cheatsheet-IT.md)
+  - [C - ENG](argomenti/C/C-Cheatsheet-ENG.md)
+  - [Java - IT](argomenti/Java/Java-Cheatsheet-IT.md)
+  - [Java - ENG](argomenti/Java/Java-Cheatsheet-ENG.md)
+  - [Python - IT](argomenti/Python/Python-Cheatsheet-IT.md)
+  - [Python - ENG](argomenti/Python/Python-Cheatsheet-ENG.md)
   
+</details>
+
+#### 🖥IOT
+
+<details>
+<summary> Cheatsheets </summary>
+
+- [Principi di Software Embedded](argomenti/IOT/PrincipiIOT.md)
+
 </details>
 
 #### 🧰 Strumenti
