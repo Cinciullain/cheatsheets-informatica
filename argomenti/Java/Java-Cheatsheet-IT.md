@@ -770,7 +770,13 @@ Saper utilizzare i diversi print e scan in modo correto è fondamentale, utilizz
 ---
 
 ### Java Collection Framework
-WIP
+È una raccolta di interfacce e classi per la rappresentazione e manipolazione di collezioni.
+I vantaggi principali della JCF sono:
+  - Aumenta la perfomance, in quanto si hanno strutture di dati e algoritmi molto efficienti
+  - Riduce quindi di conseguenza il codice da scrivere
+  - Aumenta la possibilità di riutilizzo del codice
+
+
 
 #### Set
 WIP
@@ -812,6 +818,12 @@ Il sistema di allocazione della memoria salverà gli indirizzi che sono stati li
 Questa è una breve descrizione, quella completa si trova direttamente nella [source](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
 
 ---
+
+### Threads
+WIP
+
+---
+
 ### Q & A
 WIP
 
