@@ -1,7 +1,7 @@
 # Java Cheatsheet
 **Download PDF: [WIP]()**
 
-## [Esercizi](Esercizi/EserciziJava.md)
+## [Esercizi](Esercizi/Esercizi-Java.md)
 
 ## Indice dei Contenuti
 

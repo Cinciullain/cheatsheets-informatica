@@ -26,7 +26,8 @@ Website Link: [(WIP)]()
 <details>
 <summary> Cheatsheets </summary>
 
-- [Principi di Software Embedded](argomenti/IOT/PrincipiIOT.md)
+- [Principi di Software Embedded](argomenti/IOT/Principi-IOT.md)
+- [Embedded Software Principles](argomenti/IOT/IOT-Principles.md)
 
 </details>
 
