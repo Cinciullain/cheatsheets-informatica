@@ -21,7 +21,7 @@ Website Link: [(WIP)]()
   
 </details>
 
-#### 🖥IOT
+#### 👨‍💻IOT
 
 <details>
 <summary> Cheatsheets </summary>
@@ -47,7 +47,7 @@ Website Link: [(WIP)]()
 
   - C - ✔️
   - Java - WIP
-  - Java - WIP
+  - IOT - WIP
   - Python - WIP
   - Git - WIP
   - VSCode - WIP
