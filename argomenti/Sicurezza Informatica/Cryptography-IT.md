@@ -27,7 +27,7 @@ Uno cipher è quindi composto da due funzioni:
 
 Possiamo rappresentare questi due concetti come: _C = **E**(K, P)_ e _P = **D**(K, C)_, dove E e D rappresentano encryption e decryption, K la chiave, P il plaintext e C il ciphertext.
 
-![Basic Encryption and Decryption](https://github.com/Cinciullain/cheatsheets-informatica/tree/main/argomenti/Sicurezza%20Informatica/Images/basic_encryption_decryption.png)
+![Basic Encryption and Decryption](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Sicurezza%20Informatica/Images/basic_encryption_decryption.png)
 
 ---
 
@@ -35,7 +35,7 @@ Possiamo rappresentare questi due concetti come: _C = **E**(K, P)_ e _P = **D**(
 I cifrari classici sono quelli che non lavorano direttamente sui bit, ma sulle lettere, ed uno dei più famosi è quello di Cesare.
 Si basa sullo _shifting_ delle lettere rispetto all'alfabeto di n posizioni, per esempio con n = 3, ZOO diventa CRR.
 
-![Cifrario di Cesare](https://github.com/Cinciullain/cheatsheets-informatica/tree/main/argomenti/Sicurezza%20Informatica/Images/cifrario_cesare.png)
+![Cifrario di Cesare](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Sicurezza%20Informatica/Images/cifrario_cesare.png)
 
 ---
 
@@ -43,7 +43,7 @@ Si basa sullo _shifting_ delle lettere rispetto all'alfabeto di n posizioni, per
 Sempre basato sullo shifting, ma si utilizza una _key_ per deciderlo. 
 Con K = DUH per esempio, ciclicamente le lettere verranno shiftate rispettivamente di 3, 20, 7 perchè D è 3 spazi dopo A, U 20 spazi dopo e H di 7.
 
-![Cifrario di Vigenere](https://github.com/Cinciullain/cheatsheets-informatica/tree/main/argomenti/Sicurezza%20Informatica/Images/cifrario_vigenere.png)
+![Cifrario di Vigenere](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Sicurezza%20Informatica/Images/cifrario_vigenere.png)
 
 Per dedurre questi tipi di cifrari, bisogna mettere in pratica la _frequency analysis_, prendendo conto di possibili parole o lettere che si ripetono, analizzando il testo.
 
