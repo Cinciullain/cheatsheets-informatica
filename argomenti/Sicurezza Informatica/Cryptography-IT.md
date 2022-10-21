@@ -36,6 +36,7 @@ I cifrari classici sono quelli che non lavorano direttamente sui bit, ma sulle l
 Si basa sullo _shifting_ delle lettere rispetto all'alfabeto di n posizioni, per esempio con n = 3, ZOO diventa CRR.
 
 ![Cifrario di Cesare](https://github.com/Cinciullain/cheatsheets-informatica/tree/main/argomenti/Sicurezza%20Informatica/Images/cifrario_cesare.png)
+
 ---
 
 ### Cifrari Classici - Il Cifrario di Vigenere
@@ -45,6 +46,11 @@ Con K = DUH per esempio, ciclicamente le lettere verranno shiftate rispettivamen
 ![Cifrario di Vigenere](https://github.com/Cinciullain/cheatsheets-informatica/tree/main/argomenti/Sicurezza%20Informatica/Images/cifrario_vigenere.png)
 
 Per dedurre questi tipi di cifrari, bisogna mettere in pratica la _frequency analysis_, prendendo conto di possibili parole o lettere che si ripetono, analizzando il testo.
+
+---
+
+###
+WIP
 
 ---
 
