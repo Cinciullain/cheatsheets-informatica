@@ -26,8 +26,8 @@ Website Link: [(WIP)]()
 <details>
 <summary> Cheatsheets </summary>
 
-- [Principi di Software Embedded](argomenti/IOT/Principi-IOT.md)
-- [Embedded Software Principles](argomenti/IOT/IOT-Principles.md)
+- [Principi di Software Embedded](argomenti/IoT/IT/Principi-IoT.md)
+- [Tecniche di Prototipazione IoT](argomenti/IoT/IT/Prototipazione-IoT.md)
 
 </details>
 
@@ -43,11 +43,11 @@ Website Link: [(WIP)]()
 
 ---
 
-### *Prossimi Argomenti*
+### *Argomenti Trattati*
 
   - C - ✔️
-  - Java - WIP
-  - IOT - WIP
+  - Java - WIP [80%]
+  - IOT - WIP [1%]
   - Python - WIP
   - Git - WIP
   - VSCode - WIP
