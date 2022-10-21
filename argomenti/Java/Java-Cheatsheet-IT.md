@@ -801,19 +801,19 @@ Se nel nostro codice inseriamo viariabili come un int, od oggetti come String, c
 
 1- Il primo passaggio di questo processo viene chiamato __Marking__ , e consiste nel identificare i blocchi di memoria che sono utilizzati e non.
 
-![Marking](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_Marking.png)
+![Marking](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Java/Images/JVM_Marking.png)
 
 Gli oggetti referenziati sono mostrati in blu, mentre i non referenziati in arancio. Per fare questa determinazione, ogni oggetto viene scansionato, rendendolo un processo molto lungo e pesante in termini di risorse se si lavora su un progetto molto complesso, ramificato e poco ottimizzato.
 
 2- Avviene poi il processo di __Normal Deletion__, che rimuove tutti gli oggetti non referenziati, lasciando il resto intatto.
 
-![Normal Deletion](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_NormalDeletion.png)
+![Normal Deletion](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Java/Images/JVM_NormalDeletion.png)
 
 Il sistema di allocazione della memoria salverà gli indirizzi che sono stati liberati, così da poter ora sfruttare quegli spazi.
 
 3- L'ultimo passo è quello di compattare la memoria, così da ottimizzare il suo utilizzo, ed il passaggio viene appunto chiamato __Compacting__.
 
-![Compacting](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/linguaggi/Java/Images/JVM_Compacting.png)
+![Compacting](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Java/Images/JVM_Compacting.png)
 
 Questa è una breve descrizione, quella completa si trova direttamente nella [source](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
 
