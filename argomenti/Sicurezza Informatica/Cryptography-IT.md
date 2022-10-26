@@ -12,11 +12,11 @@
   - [Le Permutazioni (Permutations)](#le-permutazioni-permutations)
   - [Modalità di Funzionamento (Mode of Operation)](#modalit-di-funzionamento-mode-of-operation)
 - [One-Time Pad Encryption](#one-time-pad-encryption)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
-- [](#)
+- [Attack Models](#attack-models)
+  - [Kerckhoffs's Principle](#kerckhoffss-principle)
+  - [Black-Box Models](#black-box-models)
+  - [Gray-Box Models](#gray-box-models)
+- [Security Goals](#security-goals)
 - [](#)
 - [](#)
 - [Abbreviazioni](#abbreviazioni)
@@ -81,10 +81,46 @@ La mode of operation (semplicemente _mode_) di un cifrario mitiga le esposizioni
 Questo è il miglior tipo di cifratura, in quanto garantisce _perfect secrecy_, ovvero: anche se un attaccante avesse una potenza di calcolo illimitata, è impossibile scoprire qualcosa sul plaintext, se non la lunghezza.
 Il meccanismo consiste nel prendere un plaintext P, una key randomica K (della stessa lunghezza di P), e ottenere il ciphertext C attraverso uno XOR.
 
-<div align="center"><font size="5">C = P ⊕ K</div>
+<div align="center"><font size="5">C = P ⊕ K</font></div>
 
+Per decrittarlo si deve fare P = C ⊕ K. Purtroppo però la chiave deve essere diversa ad ogni utilizzo, altrimenti si può dedurre il plaintext:
 
+<div align="center"><font size="3">C1 ⊕ C2 = (P1 ⊕ K) ⊕ (P2 ⊕ K) = P1 ⊕ P2 ⊕ K ⊕ K = P1 ⊕ P2</font></div>
 
+---
+
+## Attack Models
+Un _attack model_ è un set di deduzioni su come l'attaccante può interagire sul cifrario, cosa possono fare e cosa non. Gli obbiettivi di un attack model sono:
+
+- Stabilire dei requisiti per chi progetta i crifrari, così da sapere da quali attaccanti e attacchi bisogna proteggersi.
+- Fornire linee guide agli utenti, così che si capisca se il cifrario è adeguato per l'ambiente scelto.
+- Fornire delle piste ai crittoanalisti che cercare di rompere i cifrari, così da capire se un dato attacco è valido. Un attacco è valido solo se attuabile nel modello in considerazione.
+
+Gli attack models non devono necessariamente rispecchiare la realtà, sono delle approssimazioni.
+Per essere utili nella crittografia, gli attack models devono comprendere che cosa gli attaccanti possano effettivamente fare per attaccare un cifrario. Un buon modello sopravvaluta le abilità degli attaccanti, mentre uno non ben fatto le sottovaluta.
+
+### Kerckhoffs's Principle
+Una deduzione fatta in tutti i modelli è il _Kerckhoffs's Principle_, dicendo che la sicurezza di un cifrario dovrebbe dipendere solo dalla segretezza della key, non del cifrario in sè.
+
+### Black-Box Models
+Consideriamo ora alcuni attack models espressi in termini di che cosa l'attacker può osservare e quali queries possono fare al cifrario.
+Con _query_ intendiamo una operazione in cui dando dei dati in input, otteniamo un output senza esporre i dettagli della funzione da cui passiamo.
+Una _encryption query_, per esempio, prende un plaintext e restituisce il ciphertext, senza esporre la chiave.
+
+Questi tipi di modelli si chiamano _black-box models_, siccome l'attaccante può solo vedere ciò che entra ed esce dal cifrario. Di seguito una lista di alcuni cifrari di questo tipo, dal più "debole" al più "forte":
+
+- _Ciphertext-only attackers_ (COA): si ha il ciphertext senza sapere il plaintext associato, e non si sa come il plaintext è stato selezionato. Non si possono effettuare queries di encryption o decryption. È di tipo passivo. 
+- _Known-plaintext attackers_ (KPA): si ha il ciphertext ed il plaintext associato, ma i plaintext sono sempre randomici e non si possono decidere. È di tipo passivo.
+- _Chosen-plaintext attackers_ (CPA): si possono effettuare encryption queries su plaintext di propria scelta, e vedere il ciphertext risultante. È di tipo attivo.
+- _Chosen-ciphertext attackers_ (CCA): si possono effettuare encryption queries e decryption queries. Quello a cui si è interessato in questo caso è la key, per poter "rompere" il sistema.
+
+### Gray-Box Models
+WIP
+
+---
+
+## Security Goals
+WIP
 
 ---
 
