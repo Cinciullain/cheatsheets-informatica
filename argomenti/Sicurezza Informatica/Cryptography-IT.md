@@ -115,12 +115,17 @@ Questi tipi di modelli si chiamano _black-box models_, siccome l'attaccante può
 - _Chosen-ciphertext attackers_ (CCA): si possono effettuare encryption queries e decryption queries. Quello a cui si è interessato in questo caso è la key, per poter "rompere" il sistema.
 
 ### Gray-Box Models
-WIP
+A differenza del modello precedente, nel _gray-box model_ l'attacker ha accesso all'implementazione del cifrario, cosa più realistica nel mondo reale. Sono però più difficili da definire, in quanto non dipendono solo da un algoritmo, ma anche dalle proprietà fisiche e analogiche.
+
+- _Side-channel attacks_: È un tipo di attacco _noninvasive_, in quanto si osservano o misurano le caratteristiche del cifrario, ed il modo in cui è implementato, lato software o hardware che sia. Per il lato software, attacchi tipici sono sul tempo di esecuzione, e sul comportamento del sistema che avvolge il cifrario stesso come error messages, return values, branches e così via. Per implementazioni invece su dispositivi hw come le smart cards, per esempio, si va misurare il consumo energetico, emanazioni elettromagnetiche o rumori acustici. 
+- _Invasive attacks_: Sono più efficenti ma allo stesso tempo più costosi dei precedenti, in quanto coinvolge l'utilizzo di un laboratorio, microscopi, acidi, saldatrici, ecc..
 
 ---
 
 ## Security Goals
-WIP
+Lo scopo nella sicurezza è illustrato fin ora come: "Niente può essere imparato dal comportamento del cifrario". Rendiamo questa idea matematica:
+- **Indistinguishability (IND)**:
+- **Non-malleability (NM)**
 
 ---
 
