@@ -130,6 +130,12 @@ Lo scopo nella sicurezza è illustrato fin ora come: "Niente può essere imparat
 ---
 
 ## Security Notions
+I security goals sono utili solo se combinati con un attack model. La convenzione è scrivere una security notion come GOAL-MODEL.
+
+### Semantic Security and Randomized Encryption: IND-CPA
+È la security notion più importante, in quanto racchiude il concetto per cui un ciphertext non deve dare alcuna informazione riguardante il plaintext, finchè non si ha la key.
+Nella IND-CPA, l'inserimento di uno stesso plaintext due volte, fornisce due ciphertext diversi. Un modo per ottenere ciò è randomizzare l'encryption, e può essere espresso come C = **E**(K, R, P), dove R sono bit randomici.
+Il processo di decryption rimane però deterministico, in quanto dato **D**(K, R, P), si ottiene sempre P, indipendentemente dal valore di R.
 WIP
 
 ---
