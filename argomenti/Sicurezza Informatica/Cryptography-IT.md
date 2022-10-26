@@ -124,8 +124,13 @@ A differenza del modello precedente, nel _gray-box model_ l'attacker ha accesso 
 
 ## Security Goals
 Lo scopo nella sicurezza è illustrato fin ora come: "Niente può essere imparato dal comportamento del cifrario". Rendiamo questa idea matematica:
-- **Indistinguishability (IND)**:
-- **Non-malleability (NM)**
+- **Indistinguishability (IND)**: I ciphertexts devono essere indistinguibili da stringhe randomiche. Ad esempio, se un attacker scegliesse due plaintext, e ricevesse un solo ciphertext, non deve essere in grado di capire da quale dei due plaintext derivi.
+- **Non-malleability (NM)**: Dato un ciphertext C1 = E(K, P1), deve essere impossibile creare un altro ciphertext, C2, il cui plaintext corrispondente, P2, è correlato a P1 in maniera significativa (Per esempio, P2 è uguale a P1 ⊕ 1, o in generale P1 ⊕ X per un qualunque valore X). 
+
+---
+
+## Security Notions
+WIP
 
 ---
 
