@@ -17,6 +17,12 @@
   - [Black-Box Models](#black-box-models)
   - [Gray-Box Models](#gray-box-models)
 - [Security Goals](#security-goals)
+- [Security Notions](#security-notions)
+  - [Semantic Security and Randomized Encryption: IND-CPA](#semantic-security-and-randomized-encryption-ind-cpa)
+  - [Achieving Semantically Secure Encryption](#achieving-semantically-secure-encryption)
+- [](#)
+- [](#)
+- [](#)
 - [](#)
 - [](#)
 - [Abbreviazioni](#abbreviazioni)
@@ -136,9 +142,21 @@ I security goals sono utili solo se combinati con un attack model. La convenzion
 È la security notion più importante, in quanto racchiude il concetto per cui un ciphertext non deve dare alcuna informazione riguardante il plaintext, finchè non si ha la key.
 Nella IND-CPA, l'inserimento di uno stesso plaintext due volte, fornisce due ciphertext diversi. Un modo per ottenere ciò è randomizzare l'encryption, e può essere espresso come C = **E**(K, R, P), dove R sono bit randomici.
 Il processo di decryption rimane però deterministico, in quanto dato **D**(K, R, P), si ottiene sempre P, indipendentemente dal valore di R.
-WIP
+
+### Achieving Semantically Secure Encryption
+Per raggiungere ciò, si utilizza un _deterministic random bit generator_ (DRBG), un algoritmo che restituisce random-looking bits dato qualunque valore segreto:
+
+<div align="center"><font size="5">E(K, R, P) = (<b>DRBG</b>(K R) ⊕ P, R)</font></div>
+
+In questo caso R è una stringa scelta randomicamente per ogni nuova encryption, e dato ad un DRBG assieme ad una key (K || R denota la stringa che consiste in K seguita da R).
 
 ---
+
+## Asymmetric Encryption
+Quelli precedenti erano tutti casi di symmetric encryption, dove è presenta una unica key. Nella _asymmetric encryption_, invece, ci sono due chiavi: una per l'encrypt e una per il decrypt.
+La prima è anche chiamata _public key_, ed è considerata pubblica per tutti, mentre la seconda è anche chiamata _private key_, in quanto deve rimanere segreta. La public key può essere elaborata tramite la private key, ma non viceversa.
+
+
 
 ## Abbreviazioni
 
@@ -186,61 +204,53 @@ WIP
 | HKDF     | HMAC-Based Key Derivation Function             |
 | HMAC     | Hash-Based Message Authentication Code         |
 | HTTPS    | HTTP Secure                                    |
-| IND      |                                                |
-| IP       |                                                |
-| IV       |                                                |
-| KDF      |                                                |
-| KPA      |                                                |
-| LFSR     |                                                |
-| LSB      |                                                |
-| LWE      |                                                |
-| MAC      |                                                |
-| MD       |                                                |
-| MitM     |                                                |
-| MQ       |                                                |
-| MQV      |                                                |
-| MSB      |                                                |
-| MT       |                                                |
-| NFSR     |                                                |
-| NIST     |                                                |
-| NM       |                                                |
-| NP       |                                                |
-| OAEP     |                                                |
-| OCB      |                                                |
-| P        |                                                |
-| PLD      |                                                |
-| PRF      |                                                |
-| PRNG     |                                                |
-| PRP      |                                                |
-| PSK      |                                                |
-| PSS      |                                                |
-| QR       |                                                |
-| QRNG     |                                                |
-| RFC      |                                                |
-| RNG      |                                                |
-| RSA      |                                                |
-| SHA      |                                                |
-| SIS      |                                                |
-| SIV      |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-|          |                                                |
-
+| IND      | Indistinguishablity                            |
+| IP       | Internet Protocol                              |
+| IV       | Initial Value                                  |
+| KDF      | Key Derivation Function                        |
+| KPA      | Known-Plaintext Attackers                      |
+| LFSR     | Linear Feedback Shift Register                 |
+| LSB      | Least Signiﬁcant Bit                           |
+| LWE      | Learning With Errors                           |
+| MAC      | Messsage Authentication Code                   |
+| MD       | Message Digest                                 |
+| MitM     | Meet-in-the-Middle                             |
+| MQ       | Multivariate Quadratics                        |
+| MQV      | Menezes–Qu–Vanstone                            |
+| MSB      | Most Signiﬁcant Bit                            |
+| MT       | Mersenne Twister                               |
+| NFSR     | Nonlinear Feedback Shift Register              |
+| NIST     | National Institute of Standards and Technology |
+| NM       | Non-Malleability                               |
+| NP       | Nondeterministic Polynomial-Time               |
+| OAEP     | Optimal Asymmetric Encryption Padding          |
+| OCB      | Offset Codebook                                |
+| P        | Polynomial Time                                |
+| PLD      | Programmable Logic Device                      |
+| PRF      | Pseudorandom Function                          |
+| PRNG     | Pseudorandom Number Generator                  |
+| PRP      | Pseudorandom Permutation                       |
+| PSK      | Pre-Shared Key                                 |
+| PSS      | Probabilistic Signature Scheme                 |
+| QR       | Quarter-Round                                  |
+| QRNG     | Quantum Random Number Generator                |
+| RFC      | Request for Comments                           |
+| RNG      | Random Number Generator                        |
+| RSA      | Rivest–Shamir–Adleman                          |
+| SHA      | Secure Hash Algorithm                          |
+| SIS      | Short Integer Solution                         |
+| SIV      | Synthetic IV                                   |
+| SPN      | Substitution–Permutation Network               |
+| SSH      | Secure Shell                                   |
+| SSL      | Secure Socket Layer                            |
+| TE       | Tweakable Encryption                           |
+| TLS      | Transport Layer Security                       |
+| TMTO     | Time-Memory Trade-Off                          |
+| UDP      | User Datagram Protocol                         |
+| UH       | Universal Hash                                 |
+| WEP      | Wireless Encrypted Protocol                    |
+| WOTS     | Winternitz One-Time Signature                  |
+| XOR      | Exclusive OR                                   |
                   
 ---
 
