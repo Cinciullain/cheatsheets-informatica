@@ -20,8 +20,8 @@
 - [Security Notions](#security-notions)
   - [Semantic Security and Randomized Encryption: IND-CPA](#semantic-security-and-randomized-encryption-ind-cpa)
   - [Achieving Semantically Secure Encryption](#achieving-semantically-secure-encryption)
-- [](#)
-- [](#)
+- [Asymmetric Encryption](#asymmetric-encryption)
+- [Authenticated Encryption](#authenticated-encryption)
 - [](#)
 - [](#)
 - [](#)
@@ -156,7 +156,15 @@ In questo caso R è una stringa scelta randomicamente per ogni nuova encryption,
 Quelli precedenti erano tutti casi di symmetric encryption, dove è presenta una unica key. Nella _asymmetric encryption_, invece, ci sono due chiavi: una per l'encrypt e una per il decrypt.
 La prima è anche chiamata _public key_, ed è considerata pubblica per tutti, mentre la seconda è anche chiamata _private key_, in quanto deve rimanere segreta. La public key può essere elaborata tramite la private key, ma non viceversa.
 
+---
 
+## Authenticated Encryption
+L' _authenticated encryption_ (AE) è un tipo di **symmetric encryption** che restituisce un _authentication tag_ oltre al ciphertext. È rappresentato come **AE**(K, P) = (C, T), dove T è il tag, rappresentato da una stringa impossibile da dedurre senza la key.
+Per la decryption vengono presi K, C e T, e restituisce P solo se T è il tag valido per la coppia plaintext-cyphertext.
+
+![Authenticated Encryption](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Sicurezza%20Informatica/Images/authenticated_encryption.png)
+
+---
 
 ## Abbreviazioni
 
