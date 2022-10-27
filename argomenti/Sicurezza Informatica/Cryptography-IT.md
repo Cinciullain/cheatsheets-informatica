@@ -166,6 +166,14 @@ Per la decryption vengono presi K, C e T, e restituisce P solo se T è il tag va
 
 ---
 
+## Format-Preserving Encryption
+Questo cifrario risolve il problema di mantenere lo stesso formato del plaintext nel ciphertext, che sia un PDF, immagine, ecc.. 
+Per esempio, FPE può crittare un IP in un'altro IP, come nell'immagine, uno ZIP in uno ZIP, e così via.
+
+![Format-Preserving Encryption](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Sicurezza%20Informatica/Images/format-preserving_encryption.png)
+
+---
+
 ## Abbreviazioni
 
 | Acronimo | Nome Completo                                  |
