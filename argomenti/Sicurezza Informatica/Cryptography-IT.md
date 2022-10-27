@@ -22,6 +22,12 @@
   - [Achieving Semantically Secure Encryption](#achieving-semantically-secure-encryption)
 - [Asymmetric Encryption](#asymmetric-encryption)
 - [Authenticated Encryption](#authenticated-encryption)
+- [Format-Preserving Encryption](#format-preserving-encryption)
+- [Fully Homomorphic Encryption](#fully-homomorphic-encryption)
+- [Searchable Encryption](#searchable-encryption)
+- [](#)
+- [](#)
+- [](#)
 - [](#)
 - [](#)
 - [](#)
@@ -171,6 +177,17 @@ Questo cifrario risolve il problema di mantenere lo stesso formato del plaintext
 Per esempio, FPE può crittare un IP in un'altro IP, come nell'immagine, uno ZIP in uno ZIP, e così via.
 
 ![Format-Preserving Encryption](https://github.com/Cinciullain/cheatsheets-informatica/blob/main/argomenti/Sicurezza%20Informatica/Images/format-preserving_encryption.png)
+
+---
+
+## Fully Homomorphic Encryption
+La _fully homomorphic encryption_ (FHE) è l'holy grail dei crittografi: permette ai propri utenti di sostituire un ciphertext, C = **E**(K, P), con un altro ciphertext, C' = **E**(K, **F**(P)), con **F**(P) qualunque funzione di P, senza dover decifrare C.
+Purtroppo però è estremamente inefficente, ed è per questo che non viene tutt'oggi utilizzato.
+
+---
+
+## Searchable Encryption
+WIP
 
 ---
 
