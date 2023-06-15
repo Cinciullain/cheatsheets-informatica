@@ -21,6 +21,21 @@ Website Link: [(WIP)]()
   
 </details>
 
+#### 🖥️Sistemi Operativi
+
+<details>
+<summary> Argomenti </summary>
+  
+  - [Introduzione](argomenti/Sistemi%20Operativi/Introduzione.md)
+  - [I Processi](argomenti/Sistemi%20Operativi/Processi.md)
+  - [Lo Scheduling](argomenti/Sistemi%20Operativi/Scheduling.md)
+  - [La Sincronizzazione](argomenti/Sistemi%20Operativi/Sincronizzazione.md)
+  - [Le Gestione della Memoria](argomenti/Sistemi%20Operativi/GestioneMemoria.md)
+  - [Il File System](argomenti/Sistemi%20Operativi/FileSystem.md)
+  - [Esercizi](argomenti/Sistemi%20Operativi/EserciziOS.md)
+  
+</details>
+
 #### 🖥️Sicurezza Informatica
 
 <details>
